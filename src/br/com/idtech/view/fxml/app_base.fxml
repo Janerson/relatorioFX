@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.idtech.controller.AppBaseController">
+   <children>
+      <AnchorPane>
+         <children>
+            <ImageView fx:id="top" fitWidth="800.0" pickOnBounds="true" AnchorPane.bottomAnchor="441.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-18.0">
+               <image>
+                  <Image url="@../img/topo.jpg" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <BorderPane fx:id="content" layoutX="300.0" layoutY="152.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="152.0">
+               <left>
+                  <VBox fx:id="menuRoot" fillWidth="false" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox fx:id="home" onMouseClicked="#onMouseClick" onMouseEntered="#mouseIn" onMouseExited="#mouseOut" prefHeight="50.0" prefWidth="130.0">
+                           <children>
+                              <ImageView fx:id="imgHome" fitHeight="30.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                                 </HBox.margin>
+                                 <image>
+                                    <Image url="@../img/Home-50.png" />
+                                 </image>
+                              </ImageView>
+                              <Region />
+                              <Label text="Home">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </HBox>
+                        <Separator minWidth="-Infinity" prefWidth="140.0" />
+                        <HBox fx:id="report" onMouseClicked="#onMouseClick" onMouseEntered="#mouseIn" onMouseExited="#mouseOut" prefHeight="48.0" prefWidth="150.0">
+                           <children>
+                              <ImageView fx:id="imgReport" fitHeight="30.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                                 </HBox.margin>
+                                 <image>
+                                    <Image url="@../img/Ratings-50.png" />
+                                 </image>
+                              </ImageView>
+                              <Region />
+                              <Label text="Relatorio">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </HBox>
+                        <Separator minWidth="-Infinity" prefWidth="140.0" />
+                        <HBox fx:id="logout" onMouseClicked="#onMouseClick" onMouseEntered="#mouseIn" onMouseExited="#mouseOut" prefHeight="48.0" prefWidth="150.0">
+                           <children>
+                              <ImageView fx:id="imgLogout" fitHeight="44.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                                 </HBox.margin>
+                                 <image>
+                                    <Image url="@../img/Exit-50.png" />
+                                 </image>
+                              </ImageView>
+                              <Region />
+                              <Label text="Sair">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </VBox>
+               </left>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+      <Region fx:id="veil" opacity="0.3" style="-fx-background-color: black;" visible="false" />
+   </children>
+</StackPane>

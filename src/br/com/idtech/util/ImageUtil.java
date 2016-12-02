@@ -8,9 +8,7 @@ import javafx.scene.image.Image;
  */
 public class ImageUtil {
 
-    private static final String PATH = "br/com/infoestoq/view/img/";
-
-    public static final String DEFAULT_IMAGE = "avatar/Batman.png";
+    private static final String PATH = "br/com/idtech/view/img/";
 
     public static Image getImage(String imgFile) {
         return new Image(PATH + imgFile);
