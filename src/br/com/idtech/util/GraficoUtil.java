@@ -1,7 +1,5 @@
 package br.com.idtech.util;
 
-import br.com.idtech.model.entity.Senha;
-
 import javafx.animation.TranslateTransition;
 import javafx.beans.property.SimpleDoubleProperty;
 import javafx.collections.FXCollections;
@@ -26,7 +24,7 @@ import java.util.stream.DoubleStream;
 public class GraficoUtil {
 
     /*Lista de Sexo*/
-    public static ObservableList mediaSexo(List<Senha>lista){
+    public static ObservableList mediaSexo(List<?>lista){
         ObservableList<PieChart.Data> data = FXCollections.observableArrayList();
        /* double m = 0 , f =0;
         m = lista.stream()
@@ -57,7 +55,7 @@ public class GraficoUtil {
      * @param listNotas
      * @return ObservableList<PieChart.Data>
      */
-    public static ObservableList populatePierchart( List<Senha> listNotas){
+    public static ObservableList populatePierchart( List<?> listNotas){
         ObservableList<PieChart.Data> data = FXCollections.observableArrayList();
       /*  listNotas.forEach(n ->{
             data.add(new PieChart.Data(n.getDisciplinas().getDisciplina(), n.getMediaFinal()));
@@ -101,7 +99,7 @@ public class GraficoUtil {
      * @param listNotas
      * @return ObservableList<XYChart.Series>
      */
-    public static ObservableList getXYSeries(List<Senha> listNotas){
+    public static ObservableList getXYSeries(List<?> listNotas){
         ObservableList<XYChart.Series> data = FXCollections.observableArrayList();
         /*final String[] BIMESTRE = {"1º BIMESTRE" , "2° BIMESTRE","3° BIMESTRE","4º BIMESTRE"};
         listNotas.forEach( n ->{
@@ -132,14 +130,14 @@ public class GraficoUtil {
      * @param listNotas
      * @return ObservableList<PieChart.Data>
      */
-    public static ObservableList populatePierchartFaltas( List<Senha> listNotas){
+    public static ObservableList populatePierchartFaltas( List<?> listNotas){
         ObservableList<PieChart.Data> data = FXCollections.observableArrayList();
        /* listNotas.forEach(n ->{
             data.add(new PieChart.Data(n.getDisciplinas().getDisciplina(), n.getTotalFaltas()));
         });*/
         return data;
     }
-    public static ObservableList getXYSeriesFaltas(List<Senha> listNotas){
+    public static ObservableList getXYSeriesFaltas(List<?> listNotas){
         ObservableList<XYChart.Series<String, Double>> data = FXCollections.observableArrayList();
        /* final String[] BIMESTRE = {"1º BIMESTRE" , "2° BIMESTRE","3° BIMESTRE","4º BIMESTRE"};
         listNotas.forEach( n ->{

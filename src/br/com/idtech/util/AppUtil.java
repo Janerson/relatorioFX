@@ -15,11 +15,11 @@ import java.util.ResourceBundle;
  */
 public class AppUtil {
 
-    public static Date toDate(LocalDate datePicker) {
-        if(datePicker == null){
+    public static Date toDate(LocalDate localDate) {
+        if(localDate == null){
             return null;
         }
-        LocalDate ld = datePicker;
+        LocalDate ld = localDate;
         Instant instant = ld.atStartOfDay().atZone(ZoneId.systemDefault()).toInstant();
         Date date = Date.from(instant);
 

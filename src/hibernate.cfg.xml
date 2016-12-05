@@ -12,9 +12,6 @@
         <!-- Mapeamentos -->
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.format_sql">true</property>
-        <mapping class="br.com.idtech.model.entity.Senha"/>
-        <mapping class="br.com.idtech.model.entity.Servicos"/>
-        <mapping class="br.com.idtech.model.entity.Usuarios"/>
 
     </session-factory>
 </hibernate-configuration>
