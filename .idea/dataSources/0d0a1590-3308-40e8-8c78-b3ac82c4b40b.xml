@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="painel2@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="painel2">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="labestoque"/>
+    <schema id="5" parent="1" name="mysql"/>
+    <schema id="6" parent="1" name="performance_schema"/>
+    <schema id="7" parent="1" name="sisgefx"/>
+    <schema id="8" parent="1" name="test"/>
+    <table id="9" parent="2" name="guiche"/>
+    <table id="10" parent="2" name="led"/>
+    <table id="11" parent="2" name="nota"/>
+    <table id="12" parent="2" name="ordematendimentousuario"/>
+    <table id="13" parent="2" name="repassadas"/>
+    <table id="14" parent="2" name="senha"/>
+    <table id="15" parent="2" name="servicos"/>
+    <table id="16" parent="2" name="tv"/>
+    <table id="17" parent="2" name="usuario_log"/>
+    <table id="18" parent="2" name="usuario_tipo"/>
+    <table id="19" parent="2" name="usuarios"/>
+    <table id="20" parent="2" name="vencimento"/>
+    <column id="21" parent="9" name="guiche_id">
+      <Position>1</Position>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="22" parent="9" name="descricao">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <key id="23" parent="9" name="PRIMARY">
+      <ColNames>guiche_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="24" parent="10" name="led_id">
+      <Position>1</Position>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="25" parent="10" name="descricao">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <key id="26" parent="10" name="PRIMARY">
+      <ColNames>led_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="27" parent="11" name="nota_id">
+      <Position>1</Position>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="28" parent="11" name="notadesc">
+      <Position>2</Position>
+      <DataType>varchar(10)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <key id="29" parent="11" name="PRIMARY">
+      <ColNames>nota_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="30" parent="12" name="ordematendimentousuario_id">
+      <Position>1</Position>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="31" parent="12" name="usuario_id">
+      <Position>2</Position>
+      <DataType>int(10)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="32" parent="12" name="servico_id">
+      <Position>3</Position>
+      <DataType>int(10)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="33" parent="12" name="ordem">
+      <Position>4</Position>
+      <DataType>int(10)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <key id="34" parent="12" name="PRIMARY">
+      <ColNames>ordematendimentousuario_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="35" parent="13" name="repassadas_id">
+      <Position>1</Position>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="36" parent="13" name="senha_id">
+      <Position>2</Position>
+      <DataType>int(10)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="37" parent="13" name="usuario_id">
+      <Position>3</Position>
+      <DataType>int(10)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="38" parent="13" name="datahorarepasse">
+      <Position>4</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="39" parent="13" name="datahorarechamada">
+      <Position>5</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="40" parent="13" name="servico_id">
+      <Position>6</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <key id="41" parent="13" name="PRIMARY">
+      <ColNames>repassadas_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="42" parent="14" name="senha_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="43" parent="14" name="senha">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="44" parent="14" name="datahora">
+      <Position>3</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="45" parent="14" name="servico_id">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="46" parent="14" name="data">
+      <Position>5</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <column id="47" parent="14" name="chamada">
+      <Position>6</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="48" parent="14" name="usuario_id">
+      <Position>7</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="49" parent="14" name="avaliacao">
+      <Position>8</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="50" parent="14" name="nota">
+      <Position>9</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="51" parent="14" name="guiche_id">
+      <Position>10</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="52" parent="14" name="repassada">
+      <Position>11</Position>
+      <DataType>varchar(1)|0</DataType>
+    </column>
+    <column id="53" parent="14" name="rechamada">
+      <Position>12</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <index id="54" parent="14" name="senha_servico_id_data">
+      <ColNames>senha
+servico_id
+data</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="55" parent="14" name="PRIMARY">
+      <ColNames>senha_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="56" parent="14" name="senha_servico_id_data">
+      <ColNames>senha
+servico_id
+data</ColNames>
+      <UnderlyingIndexName>senha_servico_id_data</UnderlyingIndexName>
+    </key>
+    <column id="57" parent="15" name="servico_id">
+      <Position>1</Position>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="58" parent="15" name="descricao">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="59" parent="15" name="sigla">
+      <Position>3</Position>
+      <DataType>varchar(2)|0</DataType>
+    </column>
+    <column id="60" parent="15" name="inicio">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="61" parent="15" name="fim">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="62" parent="15" name="cor">
+      <Position>6</Position>
+      <DataType>int(25)|0</DataType>
+    </column>
+    <key id="63" parent="15" name="PRIMARY">
+      <ColNames>servico_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="64" parent="16" name="tv_id">
+      <Position>1</Position>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="65" parent="16" name="descricao">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="66" parent="16" name="ip">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <key id="67" parent="16" name="PRIMARY">
+      <ColNames>tv_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="68" parent="17" name="usuario_log_id">
+      <Position>1</Position>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="69" parent="17" name="datahorainicio">
+      <Position>2</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="70" parent="17" name="datahorafinal">
+      <Position>3</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="71" parent="17" name="usuario_id">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="72" parent="17" name="guiche_id">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <key id="73" parent="17" name="PRIMARY">
+      <ColNames>usuario_log_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="74" parent="18" name="usuario_tipo_id">
+      <Position>1</Position>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="75" parent="18" name="desc">
+      <Position>2</Position>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <key id="76" parent="18" name="PRIMARY">
+      <ColNames>usuario_tipo_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="77" parent="19" name="usuario_id">
+      <Position>1</Position>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="78" parent="19" name="user">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="79" parent="19" name="pass">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="80" parent="19" name="user_tipo">
+      <Position>4</Position>
+      <DataType>int(10)|0</DataType>
+    </column>
+    <column id="81" parent="19" name="nome">
+      <Position>5</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <index id="82" parent="19" name="user">
+      <ColNames>user</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="83" parent="19" name="PRIMARY">
+      <ColNames>usuario_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="84" parent="19" name="user">
+      <ColNames>user</ColNames>
+      <UnderlyingIndexName>user</UnderlyingIndexName>
+    </key>
+    <column id="85" parent="20" name="vencimento_id">
+      <Position>1</Position>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="86" parent="20" name="dt_vencimento">
+      <Position>2</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <column id="87" parent="20" name="id_software">
+      <Position>3</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <column id="88" parent="20" name="cliente_id">
+      <Position>4</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <key id="89" parent="20" name="PRIMARY">
+      <ColNames>vencimento_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

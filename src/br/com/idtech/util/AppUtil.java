@@ -3,6 +3,10 @@ package br.com.idtech.util;
 import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
 
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.ZoneId;
+import java.util.Date;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
@@ -10,6 +14,17 @@ import java.util.ResourceBundle;
  * Created by DOM on 27/10/2016.
  */
 public class AppUtil {
+
+    public static Date toDate(LocalDate datePicker) {
+        if(datePicker == null){
+            return null;
+        }
+        LocalDate ld = datePicker;
+        Instant instant = ld.atStartOfDay().atZone(ZoneId.systemDefault()).toInstant();
+        Date date = Date.from(instant);
+
+        return date;
+    }
 
     public static boolean fieldInputNotNull(final TextField field) {
         registerTypeEvent(field);
@@ -58,6 +73,7 @@ public class AppUtil {
         return i18nBundle.getString(key);
 
     }
+
 
   /*  public static void showStageOwner(Stage stage , Parent parent, EventHandler<WindowEvent> eventHandler){
         stage.setScene(new Scene(parent));
