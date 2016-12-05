@@ -1,5 +1,10 @@
 package br.com.idtech.model.entity;
 
+import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.SimpleIntegerProperty;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
+
 import java.math.BigInteger;
 
 /**
@@ -8,28 +13,32 @@ import java.math.BigInteger;
 
 public class SenhaServico {
 
-    private int total;
-    private String servico;
+    private IntegerProperty total = new SimpleIntegerProperty();
+    private StringProperty servico = new SimpleStringProperty();
 
-
-    public SenhaServico() {
-    }
-
-
-
-    public String getServico() {
-        return servico;
-    }
-
-    public void setServico(String descricao) {
-        this.servico = descricao;
-    }
+    public SenhaServico() {}
 
     public int getTotal() {
+        return total.get();
+    }
+
+    public IntegerProperty totalProperty() {
         return total;
     }
 
     public void setTotal(BigInteger total) {
-        this.total = total.intValue();
+        this.total.set(total.intValue());
+    }
+
+    public String getServico() {
+        return servico.get();
+    }
+
+    public StringProperty servicoProperty() {
+        return servico;
+    }
+
+    public void setServico(String servico) {
+        this.servico.set(servico);
     }
 }

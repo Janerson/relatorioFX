@@ -12,11 +12,11 @@ public class TestSql {
 
 
 
-        List<SenhasUsuario> result = new SenhasUsuarioVO().list();
+        //List<SenhasUsuario> result = new SenhasUsuarioVO().list();
 
 
 
-        result.forEach(s -> System.out.println("Total: "+s.getTotal() + " Servico: "+s.getUsuario()));
+      //  result.forEach(s -> System.out.println("Total: "+s.getTotal() + " Servico: "+s.getUsuario()));
 
     }
 }

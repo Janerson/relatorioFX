@@ -23,7 +23,7 @@ import java.util.stream.DoubleStream;
  */
 public class GraficoUtil {
 
-    /*Lista de Sexo*/
+
     public static ObservableList mediaSexo(List<?>lista){
         ObservableList<PieChart.Data> data = FXCollections.observableArrayList();
        /* double m = 0 , f =0;
