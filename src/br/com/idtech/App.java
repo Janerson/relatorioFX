@@ -20,6 +20,7 @@ public class App extends Application {
         primaryStage.initStyle(StageStyle.DECORATED);
         primaryStage.setScene(scene);
         primaryStage.show();
+        primaryStage.setOnCloseRequest( w -> System.exit(0));
     }
 
     public static void main(String[] args) {

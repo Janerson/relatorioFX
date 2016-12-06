@@ -17,7 +17,7 @@ public class SenhasServicoVO {
     private List<SenhaServico> senhaServicos;
 
 
-    public SenhasServicoVO(Date in , Date fim) {
+    public SenhasServicoVO(String in , String fim) {
         loadVOfromDB(in,fim);
     }
 
@@ -25,13 +25,13 @@ public class SenhasServicoVO {
         return senhaServicos;
     }
 
-    private void loadVOfromDB(Date ini , Date fim) {
+    private void loadVOfromDB(String ini , String fim) {
 
         String sql = "Select COUNT(senha.senha_id) AS total," +
                 " servicos.descricao AS Servico FROM senha" +
                 " INNER JOIN servicos  ON senha.servico_id = servicos.servico_id" +
-                " WHERE senha.data BETWEEN" + ini + " AND "+ fim +
-                "GROUP BY servicos.descricao;";
+                " WHERE senha.data BETWEEN '" + ini + " 'AND '"+ fim +
+                " 'GROUP BY servicos.descricao;";
 
         SQLQuery query = HibernateUtil.getSession().createSQLQuery(sql)
                 .addScalar("total")

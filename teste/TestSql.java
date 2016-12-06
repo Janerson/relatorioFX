@@ -1,6 +1,8 @@
 import br.com.idtech.model.entity.SenhasUsuario;
 import br.com.idtech.model.vo.SenhasUsuarioVO;
+import javafx.scene.chart.PieChart;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -11,12 +13,9 @@ public class TestSql {
     public static void main(String[] args) {
 
 
+        Date  date = new Date();
 
-        //List<SenhasUsuario> result = new SenhasUsuarioVO().list();
-
-
-
-      //  result.forEach(s -> System.out.println("Total: "+s.getTotal() + " Servico: "+s.getUsuario()));
+        System.out.println(date);
 
     }
 }

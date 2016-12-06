@@ -1,18 +1,18 @@
 package br.com.idtech.controller;
 
+import br.com.idtech.util.FXMLUtil;
 import br.com.idtech.util.ImageUtil;
 import br.com.idtech.view.animations.ImageEditor;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.Region;
-import javafx.scene.layout.VBox;
+import javafx.scene.layout.*;
 
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -25,7 +25,10 @@ public class AppBaseController implements Initializable {
     private ImageView top, imgLogout, imgReport, imgHome;
 
     @FXML
-    private BorderPane content;
+    StackPane nodeRoot , content;
+
+  /*  @FXML
+    private AnchorPane content;*/
 
     @FXML
     private VBox menuRoot;
@@ -42,6 +45,8 @@ public class AppBaseController implements Initializable {
     @FXML
     private Region veil;
 
+    Parent parent;
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         adjustLayout();
@@ -49,7 +54,7 @@ public class AppBaseController implements Initializable {
     }
 
     private void adjustLayout(){
-        top.fitWidthProperty().bind(content.widthProperty());
+        top.fitWidthProperty().bind(nodeRoot.widthProperty());
     }
 
     @FXML
@@ -84,10 +89,11 @@ public class AppBaseController implements Initializable {
 
     //TODO - Criar evento para o click nos botoes.
     @FXML
-    private void onMouseClick(Event event){
+    private void onMouseClick(Event event) throws IOException {
         switch (((HBox) event.getSource()).getId()) {
             case "home":
-                System.out.println("Click on home");
+                parent = FXMLUtil.getFXML("app_chart");
+                content.getChildren().setAll(parent);
                 break;
             case "report":
                 System.out.println("Click on report");

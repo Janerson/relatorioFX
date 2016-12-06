@@ -1,6 +1,9 @@
 package br.com.idtech.util;
 
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.scene.control.Alert;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 
 import java.time.Instant;
@@ -36,10 +39,27 @@ public class AppUtil {
         }
     }
 
+    public static boolean fieldInputNotNull(final DatePicker field) {
+        registerTypeEvent(field);
+        if (field.getValue() == null ) {
+            field.setStyle("-fx-border-color:red;");
+            return false;
+        } else {
+            return true;
+        }
+    }
+
     public static void TextFieldToUpperCase(final TextField txt) {
         txt.textProperty().addListener((observableValue, s, t1) -> txt.setText(t1.toUpperCase()));
     }
 
+    private static void registerTypeEvent(final DatePicker dt){
+        dt.valueProperty().addListener((observable, oldValue, newValue) -> {
+            if(newValue.getDayOfMonth()>0 && newValue.getDayOfMonth()<=31){
+                dt.setStyle(null);
+            }
+        });
+    }
     private static void registerTypeEvent(final TextField field) {
         field.lengthProperty().addListener((observable, oldValue, newValue) -> {
             if (newValue.intValue() > 0) {

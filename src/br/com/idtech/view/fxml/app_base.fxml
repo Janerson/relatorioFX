@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 
-<StackPane xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.idtech.controller.AppBaseController">
+<StackPane fx:id="nodeRoot" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.idtech.controller.AppBaseController">
    <children>
       <AnchorPane>
          <children>
@@ -26,7 +26,7 @@
                   <Rectangle2D />
                </viewport>
             </ImageView>
-            <BorderPane fx:id="content" layoutX="300.0" layoutY="152.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="152.0">
+            <BorderPane layoutX="300.0" layoutY="159.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="159.0">
                <left>
                   <VBox fx:id="menuRoot" fillWidth="false" BorderPane.alignment="CENTER">
                      <children>
@@ -119,6 +119,9 @@
                      </padding>
                   </VBox>
                </left>
+               <center>
+                  <StackPane fx:id="content" BorderPane.alignment="CENTER" />
+               </center>
             </BorderPane>
          </children>
       </AnchorPane>
