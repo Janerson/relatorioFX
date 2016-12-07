@@ -57,6 +57,8 @@ public class AppChartController implements Initializable {
     private Region region;
     @FXML
     GridPane gridPane;
+    @FXML
+    private Separator sep;
 
     private static BarChart barChart;
     private static LineChart lineChart;
@@ -75,6 +77,7 @@ public class AppChartController implements Initializable {
     void initiControl(){
         cbFiltro.getItems().setAll("Serviços" , "Usuários");
         cbFiltro.valueProperty().addListener((observable, oldValue, newValue) -> getDataBetween(newValue.toString()));
+
     }
 
     private void adjustLayout() {
@@ -82,6 +85,7 @@ public class AppChartController implements Initializable {
         chartContent.prefWidthProperty().bind(rootLayout.widthProperty());
         chartContent.prefHeightProperty().bind(rootLayout.heightProperty().subtract(hbox.heightProperty()));
         region.prefWidthProperty().bind(rootLayout.heightProperty());
+        sep.prefWidthProperty().bind(rootLayout.widthProperty());
     }
 
     private ObservableList<PieChart.Data> getDataServico(List<SenhaServico> list) {

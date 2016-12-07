@@ -51,8 +51,6 @@
     CHART_COLOR_49: #FFD700;
     CHART_COLOR_50: #0f5b1a;
 
-
-
 }
 
 .default-color0.chart-pie {
@@ -316,12 +314,6 @@
 
 .save-as{
     -fx-background-color: transparent;
-    -fx-graphic: url("../img/save.png");
-
 }
 
-.save-as:hover{
-    -fx-background-color: transparent;
-    -fx-graphic: url("../img/save-hover.png");
-}
 
