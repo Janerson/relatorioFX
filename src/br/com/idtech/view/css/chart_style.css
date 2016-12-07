@@ -16,6 +16,42 @@
     CHART_COLOR_14: #fde202;
     CHART_COLOR_15: #158b70;
     CHART_COLOR_16: #1a1d26;
+    CHART_COLOR_17: #8B4726;
+    CHART_COLOR_18: #00008B;
+    CHART_COLOR_19: #828282;
+    CHART_COLOR_20: #fd00be;
+    CHART_COLOR_21: #9FB6CD;
+    CHART_COLOR_22: #C1CDC1;
+    CHART_COLOR_23: #8B2323;
+    CHART_COLOR_24: #8B8878;
+    CHART_COLOR_25: #00868B;
+    CHART_COLOR_26: #836FFF;
+    CHART_COLOR_27: #6C7B8B;
+    CHART_COLOR_28: #FFFF00;
+    CHART_COLOR_29: #FFFACD;
+    CHART_COLOR_30: #DCDCDC;
+    CHART_COLOR_31: #48D1CC;
+    CHART_COLOR_32: #8B8386;
+    CHART_COLOR_33: #548B54;
+    CHART_COLOR_34: #EE9A00;
+    CHART_COLOR_35: #FF00FF;
+    CHART_COLOR_36: #FFFACD;
+    CHART_COLOR_37: #00FFFF;
+    CHART_COLOR_38: #0000FF;
+    CHART_COLOR_39: #7CFC00;
+    CHART_COLOR_40: #00FFFF;
+    CHART_COLOR_41: #FF69B4;
+    CHART_COLOR_42: #1E90FF;
+    CHART_COLOR_43: #FFEFD5;
+    CHART_COLOR_44: #FF0000;
+    CHART_COLOR_45: #008B8B;
+    CHART_COLOR_46: #CD5C5C;
+    CHART_COLOR_47: #C1CDC1;
+    CHART_COLOR_48: #AB82FF;
+    CHART_COLOR_49: #FFD700;
+    CHART_COLOR_50: #0f5b1a;
+
+
 
 }
 
@@ -278,5 +314,14 @@
     -fx-bar-fill: CHART_COLOR_16
 }
 
+.save-as{
+    -fx-background-color: transparent;
+    -fx-graphic: url("../img/save.png");
 
+}
+
+.save-as:hover{
+    -fx-background-color: transparent;
+    -fx-graphic: url("../img/save-hover.png");
+}
 

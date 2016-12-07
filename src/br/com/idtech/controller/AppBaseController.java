@@ -45,6 +45,7 @@ public class AppBaseController implements Initializable {
     @FXML
     private Region veil;
 
+
     Parent parent;
 
     @Override
@@ -55,13 +56,14 @@ public class AppBaseController implements Initializable {
 
     private void adjustLayout(){
         top.fitWidthProperty().bind(nodeRoot.widthProperty());
+
     }
 
     @FXML
     private void mouseIn(Event event) {
         switch (((HBox) event.getSource()).getId()) {
             case "home":
-                ImageEditor.setImageOn(imgHome, ImageUtil.getImage("Home-hover.png"));
+                ImageEditor.setImageOn(imgHome, ImageUtil.getImage("Pie Chart Filled-50.png"));
                 break;
             case "report":
                 ImageEditor.setImageOn(imgReport, ImageUtil.getImage("Ratings-hover.png"));
@@ -76,7 +78,7 @@ public class AppBaseController implements Initializable {
     private void mouseOut(Event event) {
         switch (((HBox) event.getSource()).getId()) {
             case "home":
-                ImageEditor.setImageOn(imgHome, ImageUtil.getImage("Home-50.png"));
+                ImageEditor.setImageOn(imgHome, ImageUtil.getImage("Pie Chart-50.png"));
                 break;
             case "report":
                 ImageEditor.setImageOn(imgReport, ImageUtil.getImage("Ratings-50.png"));

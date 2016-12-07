@@ -2,10 +2,12 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
@@ -14,15 +16,15 @@
 
 <VBox fx:id="rootLayout" alignment="CENTER" fillWidth="false" minHeight="440.0" minWidth="600.0" stylesheets="@../css/chart_style.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.idtech.controller.AppChartController">
    <children>
-      <HBox fx:id="hbox" alignment="CENTER_LEFT" minWidth="600.0" spacing="5.0">
+      <HBox fx:id="hbox" alignment="BOTTOM_LEFT" minWidth="600.0" prefHeight="69.0" prefWidth="600.0" spacing="5.0">
          <children>
-            <GridPane alignment="CENTER" hgap="10.0" vgap="5.0">
+            <GridPane fx:id="gridPane" alignment="CENTER" hgap="10.0" prefHeight="59.0" prefWidth="388.0" vgap="5.0">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
               </columnConstraints>
               <rowConstraints>
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
@@ -39,17 +41,22 @@
                   </Text>
                   <DatePicker fx:id="dtIni" GridPane.rowIndex="1" />
                   <DatePicker fx:id="dtFim" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <Button fx:id="btnServico" mnemonicParsing="false" onAction="#getDataBetween" prefHeight="25.0" prefWidth="99.0" text="Button" GridPane.rowIndex="2" />
-                  <Button fx:id="btnUsuario" mnemonicParsing="false" onAction="#getDataBetween" prefHeight="25.0" prefWidth="102.0" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <ComboBox fx:id="cbFiltro" prefWidth="150.0" promptText="Filtrar Por.." GridPane.columnIndex="2" GridPane.rowIndex="1" />
                </children>
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
                <HBox.margin>
-                  <Insets left="10.0" />
+                  <Insets top="5.0" />
                </HBox.margin>
+               <padding>
+                  <Insets left="10.0" top="5.0" />
+               </padding>
             </GridPane>
+            <Region fx:id="region" prefHeight="59.0" prefWidth="125.0" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="65.0" styleClass="save-as" />
+            <Region prefHeight="59.0" prefWidth="48.0" />
          </children></HBox>
-      <StackPane fx:id="chartContent" prefHeight="350.0" prefWidth="600.0" />
+      <StackPane fx:id="chartContent" prefHeight="378.0" prefWidth="600.0" />
    </children>
 </VBox>

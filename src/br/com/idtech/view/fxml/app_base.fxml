@@ -13,6 +13,7 @@
 <?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
 <StackPane fx:id="nodeRoot" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.idtech.controller.AppBaseController">
    <children>
@@ -30,14 +31,14 @@
                <left>
                   <VBox fx:id="menuRoot" fillWidth="false" BorderPane.alignment="CENTER">
                      <children>
-                        <HBox fx:id="home" onMouseClicked="#onMouseClick" onMouseEntered="#mouseIn" onMouseExited="#mouseOut" prefHeight="50.0" prefWidth="130.0">
+                        <HBox fx:id="home" alignment="CENTER" onMouseClicked="#onMouseClick" onMouseEntered="#mouseIn" onMouseExited="#mouseOut" prefHeight="50.0" prefWidth="130.0">
                            <children>
-                              <ImageView fx:id="imgHome" fitHeight="30.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fx:id="imgHome" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                                  <HBox.margin>
                                     <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
                                  </HBox.margin>
                                  <image>
-                                    <Image url="@../img/Home-50.png" />
+                                    <Image url="@../img/Pie%20Chart-50.png" />
                                  </image>
                               </ImageView>
                               <Region />
@@ -48,6 +49,9 @@
                                  <HBox.margin>
                                     <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
                                  </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
                               </Label>
                            </children>
                            <VBox.margin>
@@ -58,9 +62,9 @@
                            </cursor>
                         </HBox>
                         <Separator minWidth="-Infinity" prefWidth="140.0" />
-                        <HBox fx:id="report" onMouseClicked="#onMouseClick" onMouseEntered="#mouseIn" onMouseExited="#mouseOut" prefHeight="48.0" prefWidth="150.0">
+                        <HBox fx:id="report" alignment="CENTER" onMouseClicked="#onMouseClick" onMouseEntered="#mouseIn" onMouseExited="#mouseOut" prefHeight="50.0" prefWidth="150.0">
                            <children>
-                              <ImageView fx:id="imgReport" fitHeight="30.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fx:id="imgReport" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                                  <HBox.margin>
                                     <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
                                  </HBox.margin>
@@ -76,6 +80,9 @@
                                  <HBox.margin>
                                     <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
                                  </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
                               </Label>
                            </children>
                            <VBox.margin>
@@ -86,24 +93,27 @@
                            </cursor>
                         </HBox>
                         <Separator minWidth="-Infinity" prefWidth="140.0" />
-                        <HBox fx:id="logout" onMouseClicked="#onMouseClick" onMouseEntered="#mouseIn" onMouseExited="#mouseOut" prefHeight="48.0" prefWidth="150.0">
+                        <HBox fx:id="logout" alignment="CENTER" onMouseClicked="#onMouseClick" onMouseEntered="#mouseIn" onMouseExited="#mouseOut" prefHeight="50.0" prefWidth="150.0">
                            <children>
-                              <ImageView fx:id="imgLogout" fitHeight="44.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fx:id="imgLogout" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                                  <HBox.margin>
-                                    <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                                    <Insets bottom="5.0" right="5.0" top="10.0" />
                                  </HBox.margin>
                                  <image>
                                     <Image url="@../img/Exit-50.png" />
                                  </image>
                               </ImageView>
                               <Region />
-                              <Label text="Sair">
+                              <Label prefHeight="27.0" prefWidth="46.0" text="Sair">
                                  <padding>
                                     <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                                  </padding>
                                  <HBox.margin>
                                     <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
                                  </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
                               </Label>
                            </children>
                            <cursor>

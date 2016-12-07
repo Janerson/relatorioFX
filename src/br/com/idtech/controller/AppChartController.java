@@ -7,6 +7,8 @@ import br.com.idtech.model.vo.SenhasUsuarioVO;
 import br.com.idtech.util.AppUtil;
 import br.com.idtech.util.GraficoUtil;
 import javafx.application.Platform;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.embed.swing.SwingFXUtils;
@@ -15,18 +17,16 @@ import javafx.event.Event;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.geometry.Side;
+import javafx.scene.Node;
 import javafx.scene.SnapshotParameters;
 import javafx.scene.chart.*;
-import javafx.scene.control.Button;
-import javafx.scene.control.ContextMenu;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.MenuItem;
+import javafx.scene.control.*;
 import javafx.scene.image.WritableImage;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.StackPane;
-import javafx.scene.layout.VBox;
+import javafx.scene.layout.*;
+import javafx.scene.text.Text;
 import javafx.stage.FileChooser;
 
 import javax.imageio.ImageIO;
@@ -51,9 +51,16 @@ public class AppChartController implements Initializable {
     private VBox rootLayout;
     @FXML
     private HBox hbox;
+    @FXML
+    private ComboBox cbFiltro;
+    @FXML
+    private Region region;
+    @FXML
+    GridPane gridPane;
 
-    private static BarChart barChart = new BarChart(new CategoryAxis(), new NumberAxis());
-    private static LineChart lineChart = new LineChart<>(new CategoryAxis(), new NumberAxis());
+    private static BarChart barChart;
+    private static LineChart lineChart;
+    private PieChart pieChart;
 
 
     private ObservableList<SenhaServico> senhaServicos = FXCollections.observableArrayList();
@@ -63,12 +70,18 @@ public class AppChartController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         adjustLayout();
+        initiControl();
+    }
+    void initiControl(){
+        cbFiltro.getItems().setAll("Serviços" , "Usuários");
+        cbFiltro.valueProperty().addListener((observable, oldValue, newValue) -> getDataBetween(newValue.toString()));
     }
 
     private void adjustLayout() {
         hbox.prefWidthProperty().bind(rootLayout.widthProperty());
         chartContent.prefWidthProperty().bind(rootLayout.widthProperty());
         chartContent.prefHeightProperty().bind(rootLayout.heightProperty().subtract(hbox.heightProperty()));
+        region.prefWidthProperty().bind(rootLayout.heightProperty());
     }
 
     private ObservableList<PieChart.Data> getDataServico(List<SenhaServico> list) {
@@ -88,51 +101,49 @@ public class AppChartController implements Initializable {
     }
 
 
-    private PieChart createPieChart(ObservableList<PieChart.Data> data, String title) {
-        PieChart p = new PieChart(data);
-        p.setOnMouseClicked(event -> {
-            if (MouseButton.SECONDARY.equals(event.getButton())) {
-                menu().show(p.getScene().getWindow(),event.getScreenX(), event.getScreenY());
-            }
-        });
+    private PieChart createPieChart(String title) {
+        PieChart p = new PieChart();
         p.setAnimated(true);
         p.setClockwise(false);
         p.setTitle(title);
-        p.setOnContextMenuRequested(event -> menu().show(p.getScene().getWindow(),event.getScreenX(), event.getScreenY()));
+        p.setLegendSide(Side.RIGHT);
         GraficoUtil.pierChartCSS(p);
         GraficoUtil.pierChartCSSLegendItem(p);
         return p;
     }
 
-    @FXML
-    private void getDataBetween(Event event) {
+    private void setChart(Node chart , ObservableList l){
+        if(l!=null){
+            if(chart instanceof PieChart ){
+                chartContent.getChildren().setAll(chart);
+            }else if( chart instanceof BarChart){
+
+            }else if(chart instanceof LineChart){
+
+            }
+        }else{
+            chartContent.getChildren().setAll(new Text("Não há dados a serem exibidos"));
+        }
+    }
+
+
+    private void getDataBetween(String filtro) {
         if (validateField()) {
 
             String ini = dtIni.getValue().format(DateTimeFormatter.ISO_DATE);
             String fim = dtFim.getValue().format(DateTimeFormatter.ISO_DATE);
-            switch (((Button) event.getSource()).getId()) {
-                case "btnServico":
+            switch (filtro) {
+                case "Serviços":
                     senhaServicos.setAll(new SenhasServicoVO(ini, fim).list());
-                    Platform.runLater(() ->
-                            chartContent.getChildren()
-                                    .setAll(createPieChart(getDataServico(senhaServicos), "Senhas x Serviços"))
-                    );
-
+                    pieChart = createPieChart("Senhas x Serviços");
+                    setChart(pieChart,senhaServicos);
+                    pieChart.setData(getDataServico(senhaServicos));
                     break;
-                case "btnUsuario":
+                case "Usuários":
                     senhasUsuarios.setAll(new SenhasUsuarioVO(ini, fim).list());
-                    Platform.runLater(() -> {
-                                try {
-                                    Thread.sleep(1000);
-                                    chartContent.getChildren()
-                                            .setAll(createPieChart(getDataUser(senhasUsuarios), "Senhas x Usuarios"));
-                                } catch (InterruptedException e) {
-                                    e.printStackTrace();
-                                }
-                            }
-
-                    );
-
+                    pieChart = createPieChart("Senhas x Usuarios");
+                    setChart(pieChart,senhasUsuarios);
+                    pieChart.setData(getDataUser(senhasUsuarios));
                     break;
             }
         }
@@ -144,7 +155,7 @@ public class AppChartController implements Initializable {
     }
 
     @FXML
-    private void saveAsImage(){
+    private void saveAsImage() {
 
         WritableImage image = chartContent.snapshot(new SnapshotParameters(), null);
         FileChooser fileChooser = new FileChooser();
@@ -161,12 +172,7 @@ public class AppChartController implements Initializable {
         }
     }
 
-    private ContextMenu menu(){
-        ContextMenu menu = new ContextMenu();
-        MenuItem saveAs =  new MenuItem("Salvar como...");
-        saveAs.setOnAction(a -> saveAsImage());
-        return menu;
-    }
+
 
 }
 
