@@ -167,7 +167,7 @@ public class AppChartController implements Initializable {
         FileChooser fileChooser = new FileChooser();
         FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter("IMAGE files (*.png)", "*.png");
         fileChooser.getExtensionFilters().add(extFilter);
-        File file = fileChooser.showSaveDialog(null);
+        File file = fileChooser.showSaveDialog(chartContent.getScene().getWindow());
 
         try {
             if (file != null) {
@@ -178,7 +178,10 @@ public class AppChartController implements Initializable {
         }
     }
 
-
+    @FXML
+    private void getHeightHBOX(){
+        System.out.println("Height: "+hbox.getHeight() + " "+hbox.getPrefHeight());
+    }
 
 }
 

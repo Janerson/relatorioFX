@@ -17,6 +17,9 @@ public class App extends Application {
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLUtil.getFXML("app_base");
         Scene scene = new Scene(root);
+        scene.getStylesheets().add(getClass()
+                .getResource("view/css/root_chart_style.css")
+                .toExternalForm());
         StageUtil.setMinWH(1017,600,primaryStage);
         primaryStage.initStyle(StageStyle.DECORATED);
      //   ScenicView.show(scene);

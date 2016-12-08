@@ -111,9 +111,11 @@
       <file leaf-file-name="GraficoUtil.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/com/idtech/util/GraficoUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="74" column="9" lean-forward="true" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
-              <folding />
+            <state relative-caret-position="1088">
+              <caret line="74" column="9" lean-forward="false" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -121,27 +123,19 @@
       <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/com/idtech/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="7" lean-forward="false" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="204">
+              <caret line="19" column="45" lean-forward="false" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SenhasServicoVO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/br/com/idtech/model/vo/SenhasServicoVO.java">
+      <file leaf-file-name="app_chart.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/br/com/idtech/view/css/app_chart.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="19" column="33" lean-forward="false" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#419#420#0" expanded="false" />
-                <element signature="e#455#456#0" expanded="false" />
-                <element signature="e#495#496#0" expanded="false" />
-                <element signature="e#531#532#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="102">
+              <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -149,13 +143,25 @@
       <file leaf-file-name="AppChartController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/com/idtech/controller/AppChartController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="498">
-              <caret line="140" column="53" lean-forward="true" selection-start-line="140" selection-start-column="53" selection-end-line="140" selection-end-column="53" />
+            <state relative-caret-position="273">
+              <caret line="106" column="0" lean-forward="true" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#getDataServico#0;class#AppChartController#0" expanded="false" />
                 <element signature="method#getDataUser#0;class#AppChartController#0" expanded="false" />
+                <element signature="e#6093#6094#0" expanded="true" />
+                <element signature="e#6183#6184#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileChooser.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/javafx-src.zip!/javafx/stage/FileChooser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="237">
+              <caret line="389" column="58" lean-forward="true" selection-start-line="389" selection-start-column="58" selection-end-line="389" selection-end-column="58" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -163,165 +169,21 @@
       <file leaf-file-name="AppBaseController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/com/idtech/controller/AppBaseController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1377">
-              <caret line="110" column="19" lean-forward="false" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
+            <state relative-caret-position="498">
+              <caret line="113" column="0" lean-forward="false" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
               <folding>
-                <element signature="e#1147#1148#0" expanded="true" />
-                <element signature="e#1216#1217#0" expanded="true" />
-                <element signature="e#2882#2883#0" expanded="true" />
-                <element signature="e#2909#2910#0" expanded="true" />
+                <element signature="imports" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chart_style.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/br/com/idtech/view/css/chart_style.css">
+      <file leaf-file-name="root_chart_style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/br/com/idtech/view/css/root_chart_style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-884">
-              <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-              <folding>
-                <element signature="e#2111#2148#0" expanded="false" />
-                <element signature="e#2176#2213#0" expanded="false" />
-                <element signature="e#2241#2278#0" expanded="false" />
-                <element signature="e#2306#2343#0" expanded="false" />
-                <element signature="e#2371#2408#0" expanded="false" />
-                <element signature="e#2436#2473#0" expanded="false" />
-                <element signature="e#2501#2538#0" expanded="false" />
-                <element signature="e#2566#2603#0" expanded="false" />
-                <element signature="e#2631#2668#0" expanded="false" />
-                <element signature="e#2696#2733#0" expanded="false" />
-                <element signature="e#2761#2798#0" expanded="false" />
-                <element signature="e#2826#2863#0" expanded="false" />
-                <element signature="e#2891#2928#0" expanded="false" />
-                <element signature="e#2956#2993#0" expanded="false" />
-                <element signature="e#3021#3058#0" expanded="false" />
-                <element signature="e#3086#3123#0" expanded="false" />
-                <element signature="e#3151#3188#0" expanded="false" />
-                <element signature="e#3216#3253#0" expanded="false" />
-                <element signature="e#3281#3318#0" expanded="false" />
-                <element signature="e#3346#3383#0" expanded="false" />
-                <element signature="e#3411#3448#0" expanded="false" />
-                <element signature="e#3476#3513#0" expanded="false" />
-                <element signature="e#3541#3578#0" expanded="false" />
-                <element signature="e#3606#3643#0" expanded="false" />
-                <element signature="e#3671#3708#0" expanded="false" />
-                <element signature="e#3736#3773#0" expanded="false" />
-                <element signature="e#3801#3838#0" expanded="false" />
-                <element signature="e#3866#3903#0" expanded="false" />
-                <element signature="e#3931#3968#0" expanded="false" />
-                <element signature="e#3996#4033#0" expanded="false" />
-                <element signature="e#4061#4098#0" expanded="false" />
-                <element signature="e#4126#4163#0" expanded="false" />
-                <element signature="e#4191#4228#0" expanded="false" />
-                <element signature="e#4256#4293#0" expanded="false" />
-                <element signature="e#4321#4358#0" expanded="false" />
-                <element signature="e#4386#4423#0" expanded="false" />
-                <element signature="e#4451#4488#0" expanded="false" />
-                <element signature="e#4516#4553#0" expanded="false" />
-                <element signature="e#4581#4618#0" expanded="false" />
-                <element signature="e#4646#4683#0" expanded="false" />
-                <element signature="e#4733#4785#0" expanded="false" />
-                <element signature="e#4813#4865#0" expanded="false" />
-                <element signature="e#4893#4945#0" expanded="false" />
-                <element signature="e#4973#5025#0" expanded="false" />
-                <element signature="e#5053#5105#0" expanded="false" />
-                <element signature="e#5133#5185#0" expanded="false" />
-                <element signature="e#5213#5265#0" expanded="false" />
-                <element signature="e#5293#5345#0" expanded="false" />
-                <element signature="e#5373#5425#0" expanded="false" />
-                <element signature="e#5453#5506#0" expanded="false" />
-                <element signature="e#5535#5588#0" expanded="false" />
-                <element signature="e#5617#5670#0" expanded="false" />
-                <element signature="e#5699#5752#0" expanded="false" />
-                <element signature="e#5781#5834#0" expanded="false" />
-                <element signature="e#5863#5916#0" expanded="false" />
-                <element signature="e#5945#5998#0" expanded="false" />
-                <element signature="e#6027#6080#0" expanded="false" />
-                <element signature="e#6109#6162#0" expanded="false" />
-                <element signature="e#6191#6244#0" expanded="false" />
-                <element signature="e#6273#6326#0" expanded="false" />
-                <element signature="e#6355#6408#0" expanded="false" />
-                <element signature="e#6437#6490#0" expanded="false" />
-                <element signature="e#6519#6572#0" expanded="false" />
-                <element signature="e#6601#6654#0" expanded="false" />
-                <element signature="e#6683#6736#0" expanded="false" />
-                <element signature="e#6765#6818#0" expanded="false" />
-                <element signature="e#6847#6900#0" expanded="false" />
-                <element signature="e#6929#6982#0" expanded="false" />
-                <element signature="e#7011#7064#0" expanded="false" />
-                <element signature="e#7093#7146#0" expanded="false" />
-                <element signature="e#7175#7228#0" expanded="false" />
-                <element signature="e#7257#7310#0" expanded="false" />
-                <element signature="e#7339#7392#0" expanded="false" />
-                <element signature="e#7421#7474#0" expanded="false" />
-                <element signature="e#7503#7556#0" expanded="false" />
-                <element signature="e#7585#7638#0" expanded="false" />
-                <element signature="e#7667#7720#0" expanded="false" />
-                <element signature="e#7749#7802#0" expanded="false" />
-                <element signature="e#7831#7884#0" expanded="false" />
-                <element signature="e#7913#7966#0" expanded="false" />
-                <element signature="e#7995#8048#0" expanded="false" />
-                <element signature="e#8077#8130#0" expanded="false" />
-                <element signature="e#8159#8212#0" expanded="false" />
-                <element signature="e#8241#8294#0" expanded="false" />
-                <element signature="e#8323#8376#0" expanded="false" />
-                <element signature="e#8405#8458#0" expanded="false" />
-                <element signature="e#8487#8540#0" expanded="false" />
-                <element signature="e#8569#8622#0" expanded="false" />
-                <element signature="e#8651#8704#0" expanded="false" />
-                <element signature="e#8733#8786#0" expanded="false" />
-                <element signature="e#8844#8877#0" expanded="false" />
-                <element signature="e#8912#8945#0" expanded="false" />
-                <element signature="e#8980#9013#0" expanded="false" />
-                <element signature="e#9048#9081#0" expanded="false" />
-                <element signature="e#9116#9149#0" expanded="false" />
-                <element signature="e#9184#9217#0" expanded="false" />
-                <element signature="e#9252#9285#0" expanded="false" />
-                <element signature="e#9320#9353#0" expanded="false" />
-                <element signature="e#9388#9421#0" expanded="false" />
-                <element signature="e#9456#9490#0" expanded="false" />
-                <element signature="e#9526#9560#0" expanded="false" />
-                <element signature="e#9596#9630#0" expanded="false" />
-                <element signature="e#9666#9700#0" expanded="false" />
-                <element signature="e#9736#9770#0" expanded="false" />
-                <element signature="e#9806#9840#0" expanded="false" />
-                <element signature="e#9876#9910#0" expanded="false" />
-                <element signature="e#9946#9980#0" expanded="false" />
-                <element signature="e#10016#10050#0" expanded="false" />
-                <element signature="e#10086#10120#0" expanded="false" />
-                <element signature="e#10156#10190#0" expanded="false" />
-                <element signature="e#10226#10260#0" expanded="false" />
-                <element signature="e#10296#10330#0" expanded="false" />
-                <element signature="e#10366#10400#0" expanded="false" />
-                <element signature="e#10436#10470#0" expanded="false" />
-                <element signature="e#10506#10540#0" expanded="false" />
-                <element signature="e#10576#10610#0" expanded="false" />
-                <element signature="e#10646#10680#0" expanded="false" />
-                <element signature="e#10716#10750#0" expanded="false" />
-                <element signature="e#10786#10820#0" expanded="false" />
-                <element signature="e#10856#10890#0" expanded="false" />
-                <element signature="e#10926#10960#0" expanded="false" />
-                <element signature="e#10996#11030#0" expanded="false" />
-                <element signature="e#11066#11100#0" expanded="false" />
-                <element signature="e#11136#11170#0" expanded="false" />
-                <element signature="e#11206#11240#0" expanded="false" />
-                <element signature="e#11276#11310#0" expanded="false" />
-                <element signature="e#11346#11380#0" expanded="false" />
-                <element signature="e#11416#11450#0" expanded="false" />
-                <element signature="e#11486#11520#0" expanded="false" />
-                <element signature="e#11556#11590#0" expanded="false" />
-                <element signature="e#11626#11660#0" expanded="false" />
-                <element signature="e#11696#11730#0" expanded="false" />
-                <element signature="e#11766#11800#0" expanded="false" />
-                <element signature="e#11836#11870#0" expanded="false" />
-                <element signature="e#11906#11940#0" expanded="false" />
-                <element signature="e#11976#12010#0" expanded="false" />
-                <element signature="e#12046#12080#0" expanded="false" />
-                <element signature="e#12116#12150#0" expanded="false" />
-                <element signature="e#12186#12220#0" expanded="false" />
-                <element signature="e#12256#12290#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="-34">
+              <caret line="19" column="4" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="28" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -331,7 +193,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
               <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -339,17 +203,10 @@
       <file leaf-file-name="AppUtil.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/com/idtech/util/AppUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="677">
-              <caret line="107" column="55" lean-forward="true" selection-start-line="107" selection-start-column="55" selection-end-line="107" selection-end-column="55" />
+            <state relative-caret-position="1632">
+              <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="save-hover.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/br/com/idtech/view/img/save-hover.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
           </provider>
         </entry>
       </file>
@@ -358,14 +215,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="Class" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>-fx-pie-color</find>
+      <find>CHART_COLOR_1</find>
     </findStrings>
     <replaceStrings>
       <replace>series0</replace>
@@ -414,7 +272,6 @@
         <option value="$PROJECT_DIR$/src/br/com/idtech/view/fxml/app_chart.fxml" />
         <option value="$PROJECT_DIR$/teste/TestSql.java" />
         <option value="$PROJECT_DIR$/src/br/com/idtech/model/vo/SenhasServicoVO.java" />
-        <option value="$PROJECT_DIR$/src/br/com/idtech/controller/AppChartController.java" />
         <option value="$PROJECT_DIR$/src/br/com/idtech/util/AppUtil.java" />
         <option value="$PROJECT_DIR$/src/br/com/idtech/controller/AppBaseController.java" />
         <option value="$PROJECT_DIR$/src/br/com/idtech/util/StageUtil.java" />
@@ -422,6 +279,9 @@
         <option value="$PROJECT_DIR$/src/br/com/idtech/util/GraficoUtil.java" />
         <option value="$PROJECT_DIR$/src/br/com/idtech/App.java" />
         <option value="$PROJECT_DIR$/src/br/com/idtech/view/css/chart_style.css" />
+        <option value="$PROJECT_DIR$/src/br/com/idtech/controller/AppChartController.java" />
+        <option value="$PROJECT_DIR$/src/br/com/idtech/view/css/app_chart.css" />
+        <option value="$PROJECT_DIR$/src/br/com/idtech/view/css/root_chart_style.css" />
       </list>
     </option>
   </component>
@@ -433,9 +293,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="1352" />
     <option name="y" value="-8" />
-    <option name="width" value="1376" />
+    <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectReloadState">
@@ -456,6 +316,52 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="relatorioFX" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="relatorioFX" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="relatorioFX" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="relatorioFX" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="br.com.idtech" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="relatorioFX" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="relatorioFX" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="br.com.idtech" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -534,6 +440,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="relatorioFX" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="relatorioFX" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="idtech" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -683,52 +615,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="relatorioFX" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="relatorioFX" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="relatorioFX" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="relatorioFX" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="br.com.idtech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="relatorioFX" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="relatorioFX" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="br.com.idtech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scratches" />
     </panes>
   </component>
@@ -761,19 +647,19 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Lab\Documents\GitHub\relatorioFX\src\br\com\idtech\view\fxml" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Lab\Documents\GitHub\relatorioFX\src\br\com\idtech\view\img" />
+      <recent name="E:\Projects\Intellij Idea\relatorioFX\lib" />
+      <recent name="E:\Projects\Intellij Idea\relatorioFX\src\br\com\idtech\view\fxml" />
+      <recent name="E:\Projects\Intellij Idea\relatorioFX\src\br\com\idtech\util" />
+      <recent name="E:\Projects\Intellij Idea\relatorioFX\src\br\com\idtech\model\dao" />
     </key>
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="br.com.idtech.model.entity" />
       <recent name="" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Projects\Intellij Idea\relatorioFX\lib" />
-      <recent name="C:\Users\Lab\Documents\GitHub\relatorioFX\src\br\com\idtech\view\img" />
-      <recent name="E:\Projects\Intellij Idea\relatorioFX\src\br\com\idtech\view\fxml" />
-      <recent name="E:\Projects\Intellij Idea\relatorioFX\src\br\com\idtech\util" />
-      <recent name="E:\Projects\Intellij Idea\relatorioFX\src\br\com\idtech\model\dao" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Lab\Documents\GitHub\relatorioFX\src\br\com\idtech\view\fxml" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
@@ -1234,11 +1120,12 @@
       <workItem from="1481135126806" duration="2046000" />
       <workItem from="1481149676819" duration="5130000" />
       <workItem from="1481156586918" duration="3566000" />
+      <workItem from="1481188516207" duration="6475000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81996000" />
+    <option name="totallyTimeSpent" value="88471000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1250,7 +1137,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
+    <frame x="1352" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1272,10 +1159,11 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3771331" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3771331" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25683892" sideWeight="0.34982935" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21732523" sideWeight="0.6501706" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21709532" sideWeight="0.6501706" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1294,7 +1182,6 @@
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48464164" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1312,23 +1199,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/br/com/idtech/view/animations/ImageEditor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="29" column="18" lean-forward="false" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/idtech/view/img/Home-50.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/idtech/view/img/topo.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1449,9 +1319,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="15" column="32" lean-forward="false" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1479,24 +1346,13 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/idtech/controller/AppBaseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1377">
-          <caret line="110" column="19" lean-forward="false" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
-          <folding>
-            <element signature="e#1147#1148#0" expanded="true" />
-            <element signature="e#1216#1217#0" expanded="true" />
-            <element signature="e#2882#2883#0" expanded="true" />
-            <element signature="e#2909#2910#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/idtech/util/StageUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1504,196 +1360,86 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
           <caret line="36" column="19" lean-forward="false" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
-          <folding>
-            <marker date="1481158591222" expanded="true" signature="670:1027" ph="SELECT COUNT... senha" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/idtech/util/AppUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="677">
-          <caret line="107" column="55" lean-forward="true" selection-start-line="107" selection-start-column="55" selection-end-line="107" selection-end-column="55" />
+        <state relative-caret-position="1632">
+          <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/idtech/util/GraficoUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="74" column="9" lean-forward="true" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
+        <state relative-caret-position="1088">
+          <caret line="74" column="9" lean-forward="false" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/idtech/controller/AppBaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="113" column="0" lean-forward="false" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/javafx-src.zip!/javafx/stage/FileChooser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="389" column="58" lean-forward="true" selection-start-line="389" selection-start-column="58" selection-end-line="389" selection-end-column="58" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/idtech/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="7" lean-forward="false" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="204">
+          <caret line="19" column="45" lean-forward="false" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/idtech/view/img/snapshot-hover.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/idtech/view/css/app_chart.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/idtech/controller/AppChartController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="140" column="53" lean-forward="true" selection-start-line="140" selection-start-column="53" selection-end-line="140" selection-end-column="53" />
+        <state relative-caret-position="273">
+          <caret line="106" column="0" lean-forward="true" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getDataServico#0;class#AppChartController#0" expanded="false" />
             <element signature="method#getDataUser#0;class#AppChartController#0" expanded="false" />
+            <element signature="e#6093#6094#0" expanded="true" />
+            <element signature="e#6183#6184#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/idtech/view/css/chart_style.css">
+    <entry file="file://$PROJECT_DIR$/src/br/com/idtech/view/css/root_chart_style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-884">
-          <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-          <folding>
-            <element signature="e#2111#2148#0" expanded="false" />
-            <element signature="e#2176#2213#0" expanded="false" />
-            <element signature="e#2241#2278#0" expanded="false" />
-            <element signature="e#2306#2343#0" expanded="false" />
-            <element signature="e#2371#2408#0" expanded="false" />
-            <element signature="e#2436#2473#0" expanded="false" />
-            <element signature="e#2501#2538#0" expanded="false" />
-            <element signature="e#2566#2603#0" expanded="false" />
-            <element signature="e#2631#2668#0" expanded="false" />
-            <element signature="e#2696#2733#0" expanded="false" />
-            <element signature="e#2761#2798#0" expanded="false" />
-            <element signature="e#2826#2863#0" expanded="false" />
-            <element signature="e#2891#2928#0" expanded="false" />
-            <element signature="e#2956#2993#0" expanded="false" />
-            <element signature="e#3021#3058#0" expanded="false" />
-            <element signature="e#3086#3123#0" expanded="false" />
-            <element signature="e#3151#3188#0" expanded="false" />
-            <element signature="e#3216#3253#0" expanded="false" />
-            <element signature="e#3281#3318#0" expanded="false" />
-            <element signature="e#3346#3383#0" expanded="false" />
-            <element signature="e#3411#3448#0" expanded="false" />
-            <element signature="e#3476#3513#0" expanded="false" />
-            <element signature="e#3541#3578#0" expanded="false" />
-            <element signature="e#3606#3643#0" expanded="false" />
-            <element signature="e#3671#3708#0" expanded="false" />
-            <element signature="e#3736#3773#0" expanded="false" />
-            <element signature="e#3801#3838#0" expanded="false" />
-            <element signature="e#3866#3903#0" expanded="false" />
-            <element signature="e#3931#3968#0" expanded="false" />
-            <element signature="e#3996#4033#0" expanded="false" />
-            <element signature="e#4061#4098#0" expanded="false" />
-            <element signature="e#4126#4163#0" expanded="false" />
-            <element signature="e#4191#4228#0" expanded="false" />
-            <element signature="e#4256#4293#0" expanded="false" />
-            <element signature="e#4321#4358#0" expanded="false" />
-            <element signature="e#4386#4423#0" expanded="false" />
-            <element signature="e#4451#4488#0" expanded="false" />
-            <element signature="e#4516#4553#0" expanded="false" />
-            <element signature="e#4581#4618#0" expanded="false" />
-            <element signature="e#4646#4683#0" expanded="false" />
-            <element signature="e#4733#4785#0" expanded="false" />
-            <element signature="e#4813#4865#0" expanded="false" />
-            <element signature="e#4893#4945#0" expanded="false" />
-            <element signature="e#4973#5025#0" expanded="false" />
-            <element signature="e#5053#5105#0" expanded="false" />
-            <element signature="e#5133#5185#0" expanded="false" />
-            <element signature="e#5213#5265#0" expanded="false" />
-            <element signature="e#5293#5345#0" expanded="false" />
-            <element signature="e#5373#5425#0" expanded="false" />
-            <element signature="e#5453#5506#0" expanded="false" />
-            <element signature="e#5535#5588#0" expanded="false" />
-            <element signature="e#5617#5670#0" expanded="false" />
-            <element signature="e#5699#5752#0" expanded="false" />
-            <element signature="e#5781#5834#0" expanded="false" />
-            <element signature="e#5863#5916#0" expanded="false" />
-            <element signature="e#5945#5998#0" expanded="false" />
-            <element signature="e#6027#6080#0" expanded="false" />
-            <element signature="e#6109#6162#0" expanded="false" />
-            <element signature="e#6191#6244#0" expanded="false" />
-            <element signature="e#6273#6326#0" expanded="false" />
-            <element signature="e#6355#6408#0" expanded="false" />
-            <element signature="e#6437#6490#0" expanded="false" />
-            <element signature="e#6519#6572#0" expanded="false" />
-            <element signature="e#6601#6654#0" expanded="false" />
-            <element signature="e#6683#6736#0" expanded="false" />
-            <element signature="e#6765#6818#0" expanded="false" />
-            <element signature="e#6847#6900#0" expanded="false" />
-            <element signature="e#6929#6982#0" expanded="false" />
-            <element signature="e#7011#7064#0" expanded="false" />
-            <element signature="e#7093#7146#0" expanded="false" />
-            <element signature="e#7175#7228#0" expanded="false" />
-            <element signature="e#7257#7310#0" expanded="false" />
-            <element signature="e#7339#7392#0" expanded="false" />
-            <element signature="e#7421#7474#0" expanded="false" />
-            <element signature="e#7503#7556#0" expanded="false" />
-            <element signature="e#7585#7638#0" expanded="false" />
-            <element signature="e#7667#7720#0" expanded="false" />
-            <element signature="e#7749#7802#0" expanded="false" />
-            <element signature="e#7831#7884#0" expanded="false" />
-            <element signature="e#7913#7966#0" expanded="false" />
-            <element signature="e#7995#8048#0" expanded="false" />
-            <element signature="e#8077#8130#0" expanded="false" />
-            <element signature="e#8159#8212#0" expanded="false" />
-            <element signature="e#8241#8294#0" expanded="false" />
-            <element signature="e#8323#8376#0" expanded="false" />
-            <element signature="e#8405#8458#0" expanded="false" />
-            <element signature="e#8487#8540#0" expanded="false" />
-            <element signature="e#8569#8622#0" expanded="false" />
-            <element signature="e#8651#8704#0" expanded="false" />
-            <element signature="e#8733#8786#0" expanded="false" />
-            <element signature="e#8844#8877#0" expanded="false" />
-            <element signature="e#8912#8945#0" expanded="false" />
-            <element signature="e#8980#9013#0" expanded="false" />
-            <element signature="e#9048#9081#0" expanded="false" />
-            <element signature="e#9116#9149#0" expanded="false" />
-            <element signature="e#9184#9217#0" expanded="false" />
-            <element signature="e#9252#9285#0" expanded="false" />
-            <element signature="e#9320#9353#0" expanded="false" />
-            <element signature="e#9388#9421#0" expanded="false" />
-            <element signature="e#9456#9490#0" expanded="false" />
-            <element signature="e#9526#9560#0" expanded="false" />
-            <element signature="e#9596#9630#0" expanded="false" />
-            <element signature="e#9666#9700#0" expanded="false" />
-            <element signature="e#9736#9770#0" expanded="false" />
-            <element signature="e#9806#9840#0" expanded="false" />
-            <element signature="e#9876#9910#0" expanded="false" />
-            <element signature="e#9946#9980#0" expanded="false" />
-            <element signature="e#10016#10050#0" expanded="false" />
-            <element signature="e#10086#10120#0" expanded="false" />
-            <element signature="e#10156#10190#0" expanded="false" />
-            <element signature="e#10226#10260#0" expanded="false" />
-            <element signature="e#10296#10330#0" expanded="false" />
-            <element signature="e#10366#10400#0" expanded="false" />
-            <element signature="e#10436#10470#0" expanded="false" />
-            <element signature="e#10506#10540#0" expanded="false" />
-            <element signature="e#10576#10610#0" expanded="false" />
-            <element signature="e#10646#10680#0" expanded="false" />
-            <element signature="e#10716#10750#0" expanded="false" />
-            <element signature="e#10786#10820#0" expanded="false" />
-            <element signature="e#10856#10890#0" expanded="false" />
-            <element signature="e#10926#10960#0" expanded="false" />
-            <element signature="e#10996#11030#0" expanded="false" />
-            <element signature="e#11066#11100#0" expanded="false" />
-            <element signature="e#11136#11170#0" expanded="false" />
-            <element signature="e#11206#11240#0" expanded="false" />
-            <element signature="e#11276#11310#0" expanded="false" />
-            <element signature="e#11346#11380#0" expanded="false" />
-            <element signature="e#11416#11450#0" expanded="false" />
-            <element signature="e#11486#11520#0" expanded="false" />
-            <element signature="e#11556#11590#0" expanded="false" />
-            <element signature="e#11626#11660#0" expanded="false" />
-            <element signature="e#11696#11730#0" expanded="false" />
-            <element signature="e#11766#11800#0" expanded="false" />
-            <element signature="e#11836#11870#0" expanded="false" />
-            <element signature="e#11906#11940#0" expanded="false" />
-            <element signature="e#11976#12010#0" expanded="false" />
-            <element signature="e#12046#12080#0" expanded="false" />
-            <element signature="e#12116#12150#0" expanded="false" />
-            <element signature="e#12186#12220#0" expanded="false" />
-            <element signature="e#12256#12290#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="-34">
+          <caret line="19" column="4" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
