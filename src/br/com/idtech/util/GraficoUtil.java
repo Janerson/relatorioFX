@@ -68,9 +68,9 @@ public class GraficoUtil {
     public static void pierChartCSS(PieChart pieChart){
         int i = 0;
         for (PieChart.Data data : pieChart.getData()) {
-            data.setName(data.getName()+" : "+data.getPieValue());
+            data.setName(data.getName()+" : "+(int)data.getPieValue());
             data.getNode().getStyleClass().remove("default-color" + i);
-            data.getNode().getStyleClass().add("default-color" + (i));
+            data.getNode().getStyleClass().add("default-color" +i);
             i++;
         }
     }

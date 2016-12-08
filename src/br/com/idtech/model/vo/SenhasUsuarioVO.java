@@ -34,7 +34,7 @@ public class SenhasUsuarioVO {
                 " INNER JOIN usuarios" +
                 " ON senha.usuario_id = usuarios.usuario_id" +
                 " WHERE senha.data BETWEEN '" + ini + "' AND '"+ fim +
-                " 'GROUP BY usuarios.nome;";
+                "' GROUP BY usuarios.nome;";
 
         SQLQuery query = HibernateUtil.getSession().createSQLQuery(sql)
                 .addScalar("total")

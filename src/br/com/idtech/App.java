@@ -7,6 +7,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import org.scenicview.ScenicView;
 
 /**
  * Created by Lab on 02/12/2016.
@@ -18,6 +19,7 @@ public class App extends Application {
         Scene scene = new Scene(root);
         StageUtil.setMinWH(1017,600,primaryStage);
         primaryStage.initStyle(StageStyle.DECORATED);
+     //   ScenicView.show(scene);
         primaryStage.setScene(scene);
         primaryStage.show();
         primaryStage.setOnCloseRequest( w -> System.exit(0));

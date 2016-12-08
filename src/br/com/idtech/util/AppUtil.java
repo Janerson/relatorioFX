@@ -1,10 +1,17 @@
 package br.com.idtech.util;
 
+import br.com.idtech.controller.AppBaseController;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
+import javafx.event.EventHandler;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
+import javafx.stage.WindowEvent;
 
 import java.time.Instant;
 import java.time.LocalDate;
@@ -95,7 +102,7 @@ public class AppUtil {
     }
 
 
-  /*  public static void showStageOwner(Stage stage , Parent parent, EventHandler<WindowEvent> eventHandler){
+    public static void showStageOwner(Stage stage , Parent parent, EventHandler<WindowEvent> eventHandler){
         stage.setScene(new Scene(parent));
         stage.initModality(Modality.WINDOW_MODAL);
         AppBaseController.base.getRegionOverlayEffect()
@@ -104,6 +111,6 @@ public class AppUtil {
         stage.show();
         stage.setResizable(false);
        stage.setOnCloseRequest(eventHandler);
-    }*/
+    }
 
 }

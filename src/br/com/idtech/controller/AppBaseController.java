@@ -21,6 +21,8 @@ import java.util.ResourceBundle;
  */
 public class AppBaseController implements Initializable {
 
+    public static AppBaseController base;
+
     @FXML
     private ImageView top, imgLogout, imgReport, imgHome;
 
@@ -51,12 +53,11 @@ public class AppBaseController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         adjustLayout();
-
+        base = this;
     }
 
     private void adjustLayout(){
         top.fitWidthProperty().bind(nodeRoot.widthProperty());
-
     }
 
     @FXML
@@ -104,5 +105,9 @@ public class AppBaseController implements Initializable {
                 System.exit(0);
                 break;
         }
+    }
+
+    public Region getRegionOverlayEffect(){
+        return veil;
     }
 }

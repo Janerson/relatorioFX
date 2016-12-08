@@ -111,8 +111,6 @@ public class AppChartController implements Initializable {
         p.setClockwise(false);
         p.setTitle(title);
         p.setLegendSide(Side.RIGHT);
-        GraficoUtil.pierChartCSS(p);
-        GraficoUtil.pierChartCSSLegendItem(p);
         return p;
     }
 
@@ -142,12 +140,16 @@ public class AppChartController implements Initializable {
                     pieChart = createPieChart("Senhas x Serviços");
                     setChart(pieChart,senhaServicos);
                     pieChart.setData(getDataServico(senhaServicos));
+                    GraficoUtil.pierChartCSS(pieChart);
+                    GraficoUtil.pierChartCSSLegendItem(pieChart);
                     break;
                 case "Usuários":
                     senhasUsuarios.setAll(new SenhasUsuarioVO(ini, fim).list());
                     pieChart = createPieChart("Senhas x Usuarios");
                     setChart(pieChart,senhasUsuarios);
                     pieChart.setData(getDataUser(senhasUsuarios));
+                    GraficoUtil.pierChartCSS(pieChart);
+                    GraficoUtil.pierChartCSSLegendItem(pieChart);
                     break;
             }
         }
