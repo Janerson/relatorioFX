@@ -1,7 +1,13 @@
 .btn-snapshot{
-    -fx-background-color: transparent;
     -fx-graphic: url("../img/snapshot-.png");
 }
 .btn-snapshot:hover{
     -fx-graphic: url("../img/snapshot-hover.png");
+}
+
+.btn-print{
+    -fx-graphic: url("../img/print.png");
+}
+.btn-print:hover{
+    -fx-graphic: url("../img/print-hover.png");
 }

@@ -99,7 +99,8 @@ public class AppBaseController implements Initializable {
                 content.getChildren().setAll(parent);
                 break;
             case "report":
-                System.out.println("Click on report");
+                parent = FXMLUtil.getFXML("app_table");
+                content.getChildren().setAll(parent);
                 break;
             case "logout":
                 System.exit(0);

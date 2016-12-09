@@ -19,7 +19,7 @@ public class SenhasUsuario {
     }
 
     public int getTotal() {
-        return total.get();
+        return total.getValue();
     }
 
     public IntegerProperty totalProperty() {

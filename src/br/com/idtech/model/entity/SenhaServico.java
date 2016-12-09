@@ -1,5 +1,6 @@
 package br.com.idtech.model.entity;
 
+
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;

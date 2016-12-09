@@ -6,25 +6,23 @@ import br.com.idtech.model.vo.SenhasServicoVO;
 import br.com.idtech.model.vo.SenhasUsuarioVO;
 import br.com.idtech.util.AppUtil;
 import br.com.idtech.util.GraficoUtil;
-import javafx.application.Platform;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
+import br.com.idtech.util.ReadProps;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.embed.swing.SwingFXUtils;
-import javafx.event.ActionEvent;
-import javafx.event.Event;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.geometry.Side;
 import javafx.scene.Node;
 import javafx.scene.SnapshotParameters;
-import javafx.scene.chart.*;
-import javafx.scene.control.*;
+import javafx.scene.chart.BarChart;
+import javafx.scene.chart.LineChart;
+import javafx.scene.chart.PieChart;
+import javafx.scene.control.ButtonBar;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.Separator;
 import javafx.scene.image.WritableImage;
-import javafx.scene.input.MouseButton;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.*;
 import javafx.scene.text.Text;
 import javafx.stage.FileChooser;
@@ -34,9 +32,10 @@ import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.time.format.DateTimeFormatter;
-import java.util.Date;
-import java.util.List;
 import java.util.ResourceBundle;
+
+import static br.com.idtech.util.GraficoUtil.getDataServico;
+import static br.com.idtech.util.GraficoUtil.getDataUser;
 
 /**
  * Created by Lab on 06/12/2016.
@@ -59,9 +58,9 @@ public class AppChartController implements Initializable {
     GridPane gridPane;
     @FXML
     private Separator sep;
+    @FXML
+    private ButtonBar btnbar;
 
-    private static BarChart barChart;
-    private static LineChart lineChart;
     private PieChart pieChart;
 
 
@@ -84,25 +83,11 @@ public class AppChartController implements Initializable {
         hbox.prefWidthProperty().bind(rootLayout.widthProperty());
         chartContent.prefWidthProperty().bind(rootLayout.widthProperty());
         chartContent.prefHeightProperty().bind(rootLayout.heightProperty().subtract(hbox.heightProperty()));
-        region.prefWidthProperty().bind(rootLayout.heightProperty());
+        region.prefWidthProperty().bind(rootLayout.widthProperty().subtract(398).subtract(100));
         sep.prefWidthProperty().bind(rootLayout.widthProperty());
     }
 
-    private ObservableList<PieChart.Data> getDataServico(List<SenhaServico> list) {
-        ObservableList<PieChart.Data> data = FXCollections.observableArrayList();
-        for (SenhaServico s : list) {
-            data.add(new PieChart.Data(s.getServico(), s.getTotal()));
-        }
-        return data;
-    }
 
-    private ObservableList<PieChart.Data> getDataUser(List<SenhasUsuario> list) {
-        ObservableList<PieChart.Data> data = FXCollections.observableArrayList();
-        for (SenhasUsuario s : list) {
-            data.add(new PieChart.Data(s.getUsuario(), s.getTotal()));
-        }
-        return data;
-    }
 
 
     private PieChart createPieChart(String title) {
@@ -137,7 +122,7 @@ public class AppChartController implements Initializable {
             switch (filtro) {
                 case "Serviços":
                     senhaServicos.setAll(new SenhasServicoVO(ini, fim).list());
-                    pieChart = createPieChart("Senhas x Serviços");
+                    pieChart = createPieChart(ReadProps.lerProperties("pie_chart_senhas_servico"));
                     setChart(pieChart,senhaServicos);
                     pieChart.setData(getDataServico(senhaServicos));
                     GraficoUtil.pierChartCSS(pieChart);
@@ -145,7 +130,7 @@ public class AppChartController implements Initializable {
                     break;
                 case "Usuários":
                     senhasUsuarios.setAll(new SenhasUsuarioVO(ini, fim).list());
-                    pieChart = createPieChart("Senhas x Usuarios");
+                    pieChart = createPieChart(ReadProps.lerProperties("pie_chart_senhas_usuario"));
                     setChart(pieChart,senhasUsuarios);
                     pieChart.setData(getDataUser(senhasUsuarios));
                     GraficoUtil.pierChartCSS(pieChart);
@@ -178,10 +163,6 @@ public class AppChartController implements Initializable {
         }
     }
 
-    @FXML
-    private void getHeightHBOX(){
-        System.out.println("Height: "+hbox.getHeight() + " "+hbox.getPrefHeight());
-    }
 
 }
 

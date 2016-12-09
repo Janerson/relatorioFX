@@ -56,8 +56,8 @@
                   <Insets bottom="5.0" left="10.0" top="5.0" />
                </padding>
             </GridPane>
-            <Region fx:id="region" prefHeight="69.0" prefWidth="19.0" />
-            <ButtonBar buttonMinWidth="30.0" prefHeight="52.0" prefWidth="189.0">
+            <Region fx:id="region" />
+            <ButtonBar fx:id="btnbar" buttonMinWidth="30.0" prefHeight="87.0" prefWidth="72.0">
               <buttons>
                 <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#saveAsImage" styleClass="btn-snapshot">
                      <cursor>
@@ -68,8 +68,11 @@
                   <Insets />
                </opaqueInsets>
                <HBox.margin>
-                  <Insets right="10.0" />
+                  <Insets />
                </HBox.margin>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
             </ButtonBar>
          </children></HBox>
       <Separator fx:id="sep" prefWidth="200.0" />

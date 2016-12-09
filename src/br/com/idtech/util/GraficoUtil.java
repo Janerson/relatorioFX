@@ -1,6 +1,10 @@
 package br.com.idtech.util;
 
+import br.com.idtech.model.entity.SenhaServico;
+import br.com.idtech.model.entity.SenhasUsuario;
 import javafx.animation.TranslateTransition;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.EventHandler;
 import javafx.scene.Node;
 import javafx.scene.chart.BarChart;
@@ -11,11 +15,31 @@ import javafx.scene.input.MouseEvent;
 import javafx.util.Duration;
 
 import java.text.DecimalFormat;
+import java.util.List;
 
 /**
  * Created by DOM on 19/01/2015.
  */
 public class GraficoUtil {
+
+
+
+
+    public static ObservableList<PieChart.Data> getDataServico(List<SenhaServico> list) {
+        ObservableList<PieChart.Data> data = FXCollections.observableArrayList();
+        for (SenhaServico s : list) {
+            data.add(new PieChart.Data(s.getServico(), s.getTotal()));
+        }
+        return data;
+    }
+
+    public static ObservableList<PieChart.Data> getDataUser(List<SenhasUsuario> list) {
+        ObservableList<PieChart.Data> data = FXCollections.observableArrayList();
+        for (SenhasUsuario s : list) {
+            data.add(new PieChart.Data(s.getUsuario(), s.getTotal()));
+        }
+        return data;
+    }
 
     /**
      * Calcula a % de uma <b>fração</> do valor <b>total</b>.
@@ -27,7 +51,6 @@ public class GraficoUtil {
         String str = new DecimalFormat("0.00").format((fracao/total)*100);
         return Double.parseDouble(str.replace(",","."));
     }
-
     /*BarChart CSS*/
     public static void barChartCSS(BarChart barChart){
         /**
