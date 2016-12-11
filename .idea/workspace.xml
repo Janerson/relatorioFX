@@ -108,73 +108,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GraficoUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/br/com/idtech/util/GraficoUtil.java">
+      <file leaf-file-name="Report.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/br/com/idtech/model/reportbuilder/Report.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="12" column="21" lean-forward="false" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-              <folding>
-                <element signature="method#percentual#0;class#GraficoUtil#0" expanded="false" />
-                <element signature="method#barChartCSS#0;class#GraficoUtil#0" expanded="false" />
-                <element signature="method#lineChartCSS#0;class#GraficoUtil#0" expanded="false" />
-                <element signature="method#pierChartCSS#0;class#GraficoUtil#0" expanded="false" />
-                <element signature="method#pierChartCSSLegendItem#0;class#GraficoUtil#0" expanded="false" />
-                <element signature="class#MouseHoverAnimation#0;class#GraficoUtil#0" expanded="false" />
-                <element signature="class#MouseExitAnimation#0;class#GraficoUtil#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReadProps.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/br/com/idtech/util/ReadProps.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="12" column="41" lean-forward="false" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/app.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/br/com/idtech/App.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="23" column="45" lean-forward="false" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#993#994#0" expanded="false" />
-                <element signature="e#1021#1022#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AppBaseController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/br/com/idtech/controller/AppBaseController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
-              <caret line="101" column="52" lean-forward="false" selection-start-line="101" selection-start-column="52" selection-end-line="101" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AppChartController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/br/com/idtech/controller/AppChartController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="85" column="79" lean-forward="false" selection-start-line="85" selection-start-column="79" selection-end-line="85" selection-end-column="79" />
+            <state relative-caret-position="323">
+              <caret line="19" column="75" lean-forward="false" selection-start-line="19" selection-start-column="75" selection-end-line="19" selection-end-column="75" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -182,59 +120,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppTableController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ImageUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/br/com/idtech/util/ImageUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="22" column="25" lean-forward="false" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BuildReport.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/br/com/idtech/model/reportbuilder/BuildReport.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="840">
+              <caret line="54" column="12" lean-forward="false" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppTableController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/com/idtech/controller/AppTableController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="87" column="41" lean-forward="true" selection-start-line="87" selection-start-column="41" selection-end-line="87" selection-end-column="41" />
+            <state relative-caret-position="294">
+              <caret line="127" column="35" lean-forward="true" selection-start-line="127" selection-start-column="35" selection-end-line="127" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SenhasUsuario.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/br/com/idtech/model/entity/SenhasUsuario.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="21" column="31" lean-forward="false" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#SenhasUsuario#0;class#SenhasUsuario#0" expanded="false" />
-                <element signature="e#526#527#0" expanded="true" />
-                <element signature="e#565#566#0" expanded="true" />
-                <element signature="e#611#612#0" expanded="true" />
-                <element signature="e#639#640#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SenhaServico.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/br/com/idtech/model/entity/SenhaServico.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#601#602#0" expanded="true" />
-                <element signature="e#629#630#0" expanded="true" />
-                <element signature="e#840#841#0" expanded="true" />
-                <element signature="e#870#871#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app_chart.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/br/com/idtech/view/css/app_chart.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-              <folding>
-                <marker date="1481244295227" expanded="true" signature="13:62" ph="{...}" />
-                <marker date="1481244295227" expanded="true" signature="210:261" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -254,6 +170,7 @@
     <findStrings>
       <find>-fx-pie-color</find>
       <find>CHART_COLOR_1</find>
+      <find>73A493</find>
     </findStrings>
     <replaceStrings>
       <replace>series0</replace>
@@ -276,16 +193,13 @@
         <option value="$PROJECT_DIR$/src/br/com/idtech/util/FXMLUtil.java" />
         <option value="$PROJECT_DIR$/src/br/com/idtech/view/fxml/app_base.fxml" />
         <option value="$PROJECT_DIR$/src/br/com/idtech/view/animations/ImageEditor.java" />
-        <option value="$PROJECT_DIR$/src/br/com/idtech/util/ImageUtil.java" />
         <option value="$PROJECT_DIR$/src/br/com/idtech/model/entity/UsuarioLog.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0d0a1590-3308-40e8-8c78-b3ac82c4b40b/console.sql" />
         <option value="$PROJECT_DIR$/src/br/com/idtech/view/reportform/JasperViewer.java" />
         <option value="$PROJECT_DIR$/src/br/com/idtech/view/reportform/JRViewer.java" />
         <option value="$PROJECT_DIR$/teste/e.java" />
-        <option value="$PROJECT_DIR$/src/br/com/idtech/model/reportbuilder/BuildReport.java" />
         <option value="$PROJECT_DIR$/src/br/com/idtech/model/impl/DAOImpl.java" />
         <option value="$PROJECT_DIR$/src/br/com/idtech/model/dao/ProdutoDAO.java" />
-        <option value="$PROJECT_DIR$/src/br/com/idtech/model/reportbuilder/Report.java" />
         <option value="$PROJECT_DIR$/src/br/com/idtech/util/HibernateUtil.java" />
         <option value="$PROJECT_DIR$/src/br/com/idtech/model/dao/SenhasDAO.java" />
         <option value="$PROJECT_DIR$/src/br/com/idtech/view/fxml/Graficos.fxml" />
@@ -310,11 +224,15 @@
         <option value="$PROJECT_DIR$/src/br/com/idtech/util/GraficoUtil.java" />
         <option value="$PROJECT_DIR$/src/br/com/idtech/view/fxml/app_table.fxml" />
         <option value="$PROJECT_DIR$/src/br/com/idtech/view/css/app_chart.css" />
-        <option value="$PROJECT_DIR$/src/br/com/idtech/controller/AppBaseController.java" />
         <option value="$PROJECT_DIR$/src/br/com/idtech/model/entity/SenhaServico.java" />
         <option value="$PROJECT_DIR$/src/br/com/idtech/model/entity/SenhasUsuario.java" />
+        <option value="$PROJECT_DIR$/src/br/com/idtech/controller/AppBaseController.java" />
         <option value="$PROJECT_DIR$/src/br/com/idtech/controller/AppChartController.java" />
+        <option value="$PROJECT_DIR$/src/br/com/idtech/view/report/report_between.jrxml" />
+        <option value="$PROJECT_DIR$/src/br/com/idtech/util/ImageUtil.java" />
         <option value="$PROJECT_DIR$/src/br/com/idtech/controller/AppTableController.java" />
+        <option value="$PROJECT_DIR$/src/br/com/idtech/model/reportbuilder/BuildReport.java" />
+        <option value="$PROJECT_DIR$/src/br/com/idtech/model/reportbuilder/Report.java" />
       </list>
     </option>
   </component>
@@ -349,6 +267,53 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="relatorioFX" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="relatorioFX" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="relatorioFX" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="relatorioFX" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="br.com.idtech" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="relatorioFX" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="relatorioFX" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="br.com.idtech" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -451,107 +416,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="relatorioFX" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="relatorioFX" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="idtech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fxml" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="relatorioFX" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="relatorioFX" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="idtech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="relatorioFX" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="relatorioFX" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="idtech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="relatorioFX" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="relatorioFX" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="idtech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vo" />
+              <option name="myItemId" value="report" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -599,29 +464,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="entity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="relatorioFX" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="relatorioFX" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="idtech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
+              <option name="myItemId" value="reportbuilder" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -641,53 +484,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="relatorioFX" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="relatorioFX" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="relatorioFX" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="relatorioFX" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="br.com.idtech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="relatorioFX" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="relatorioFX" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="br.com.idtech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -707,7 +503,7 @@
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files (x86)\nodejs\node.exe" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
@@ -716,23 +512,23 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="JPA.DatabaseSchemaImportDialog" value="0d0a1590-3308-40e8-8c78-b3ac82c4b40b" />
-    <property name="SearchEverywhereHistoryKey" value="Senhas&#9;FILE&#9;file://E:/Projects/Intellij Idea/relatorioFX/src/br/com/idtech/model/entity/SenhasUsuario.java&#10;AppB&#9;FILE&#9;file://E:/Projects/Intellij Idea/relatorioFX/src/br/com/idtech/controller/AppBaseController.java&#10;Se&#9;FILE&#9;file://E:/Projects/Intellij Idea/relatorioFX/src/br/com/idtech/model/vo/SenhasUsuarioVO.java&#10;hiber&#9;FILE&#9;file://C:/Users/Lab/Documents/GitHub/relatorioFX/src/hibernate.cfg.xml&#10;Senha&#9;FILE&#9;file://E:/Projects/Intellij Idea/relatorioFX/src/br/com/idtech/model/entity/Senha.java&#10;ser&#9;FILE&#9;file://E:/Projects/Intellij Idea/relatorioFX/src/br/com/idtech/model/entity/Servicos.java&#10;tes&#9;PSI&#9;JAVA://com.group.sisgefx.model.relatorio.fluent.Report#ATESTADO_MATRICULA&#10;Sen&#9;PSI&#9;JAVA://br.com.idtech.model.entity.Senha" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/Projects/Intellij Idea/relatorioFX/src/br/com/idtech/util/ImageUtil.java&#10;Senhas&#9;FILE&#9;file://E:/Projects/Intellij Idea/relatorioFX/src/br/com/idtech/model/entity/SenhasUsuario.java&#10;AppB&#9;FILE&#9;file://E:/Projects/Intellij Idea/relatorioFX/src/br/com/idtech/controller/AppBaseController.java&#10;Se&#9;FILE&#9;file://E:/Projects/Intellij Idea/relatorioFX/src/br/com/idtech/model/vo/SenhasUsuarioVO.java&#10;hiber&#9;FILE&#9;file://C:/Users/Lab/Documents/GitHub/relatorioFX/src/hibernate.cfg.xml&#10;Senha&#9;FILE&#9;file://E:/Projects/Intellij Idea/relatorioFX/src/br/com/idtech/model/entity/Senha.java&#10;ser&#9;FILE&#9;file://E:/Projects/Intellij Idea/relatorioFX/src/br/com/idtech/model/entity/Servicos.java&#10;tes&#9;PSI&#9;JAVA://com.group.sisgefx.model.relatorio.fluent.Report#ATESTADO_MATRICULA&#10;Sen&#9;PSI&#9;JAVA://br.com.idtech.model.entity.Senha" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Lab\Documents\GitHub\relatorioFX\src\br\com\idtech\view\fxml" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Projects\Intellij Idea\relatorioFX\src\br\com\idtech\model\reportbuilder" />
+      <recent name="E:\Projects\Intellij Idea\relatorioFX\src\br\com\idtech\view\img" />
+      <recent name="C:\Users\Lab\Documents\GitHub\relatorioFX\src\br\com\idtech\view\img" />
+      <recent name="E:\Projects\Intellij Idea\relatorioFX\lib" />
+      <recent name="E:\Projects\Intellij Idea\relatorioFX\src\br\com\idtech\view\fxml" />
     </key>
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="br.com.idtech.model.entity" />
       <recent name="" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Projects\Intellij Idea\relatorioFX\src\br\com\idtech\view\img" />
-      <recent name="C:\Users\Lab\Documents\GitHub\relatorioFX\src\br\com\idtech\view\img" />
-      <recent name="E:\Projects\Intellij Idea\relatorioFX\lib" />
-      <recent name="E:\Projects\Intellij Idea\relatorioFX\src\br\com\idtech\view\fxml" />
-      <recent name="E:\Projects\Intellij Idea\relatorioFX\src\br\com\idtech\util" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Lab\Documents\GitHub\relatorioFX\src\br\com\idtech\view\fxml" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
@@ -1195,11 +991,15 @@
       <workItem from="1481156586918" duration="3566000" />
       <workItem from="1481188516207" duration="7069000" />
       <workItem from="1481239260807" duration="8845000" />
+      <workItem from="1481321979584" duration="1044000" />
+      <workItem from="1481410435835" duration="2569000" />
+      <workItem from="1481471239241" duration="3631000" />
+      <workItem from="1481475362006" duration="550000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97910000" />
+    <option name="totallyTimeSpent" value="105704000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1236,8 +1036,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3771331" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25683892" sideWeight="0.34982935" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22036473" sideWeight="0.6501706" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22340426" sideWeight="0.6501706" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1256,6 +1055,7 @@
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48464164" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1275,16 +1075,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/br/com/idtech/model/entity/Led.java" />
-    <entry file="file://$PROJECT_DIR$/src/br/com/idtech/model/entity/Guiche.java" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0d0a1590-3308-40e8-8c78-b3ac82c4b40b/console.sql" />
-    <entry file="file://$PROJECT_DIR$/src/br/com/idtech/util/ImageUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/idtech/view/reportform/JRViewer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-425">
@@ -1299,21 +1090,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/idtech/model/reportbuilder/BuildReport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="140" column="19" lean-forward="true" selection-start-line="140" selection-start-column="19" selection-end-line="140" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/idtech/model/interfaces/IDAO.java" />
-    <entry file="file://$PROJECT_DIR$/src/br/com/idtech/model/reportbuilder/Report.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="121" lean-forward="false" selection-start-line="11" selection-start-column="121" selection-end-line="11" selection-end-column="121" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1377,13 +1154,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="19" column="33" lean-forward="false" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#419#420#0" expanded="false" />
-            <element signature="e#455#456#0" expanded="false" />
-            <element signature="e#495#496#0" expanded="false" />
-            <element signature="e#531#532#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1401,9 +1171,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1411,20 +1178,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
           <caret line="36" column="19" lean-forward="false" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/javafx-src.zip!/javafx/stage/FileChooser.java" />
     <entry file="file://$PROJECT_DIR$/src/br/com/idtech/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="272">
           <caret line="23" column="45" lean-forward="false" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#993#994#0" expanded="false" />
-            <element signature="e#1021#1022#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1434,7 +1195,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="12" column="41" lean-forward="false" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1453,17 +1216,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/idtech/util/GraficoUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
+        <state relative-caret-position="204">
           <caret line="12" column="21" lean-forward="false" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-          <folding>
-            <element signature="method#percentual#0;class#GraficoUtil#0" expanded="false" />
-            <element signature="method#barChartCSS#0;class#GraficoUtil#0" expanded="false" />
-            <element signature="method#lineChartCSS#0;class#GraficoUtil#0" expanded="false" />
-            <element signature="method#pierChartCSS#0;class#GraficoUtil#0" expanded="false" />
-            <element signature="method#pierChartCSSLegendItem#0;class#GraficoUtil#0" expanded="false" />
-            <element signature="class#MouseHoverAnimation#0;class#GraficoUtil#0" expanded="false" />
-            <element signature="class#MouseExitAnimation#0;class#GraficoUtil#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1481,73 +1235,97 @@
     <entry file="file://$PROJECT_DIR$/src/br/com/idtech/view/css/app_chart.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding>
-            <marker date="1481244295227" expanded="true" signature="13:62" ph="{...}" />
-            <marker date="1481244295227" expanded="true" signature="210:261" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/idtech/controller/AppBaseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="101" column="52" lean-forward="false" selection-start-line="101" selection-start-column="52" selection-end-line="101" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="24" />
+          <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/idtech/model/entity/SenhaServico.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="187">
           <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#601#602#0" expanded="true" />
-            <element signature="e#629#630#0" expanded="true" />
-            <element signature="e#840#841#0" expanded="true" />
-            <element signature="e#870#871#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/idtech/model/entity/SenhasUsuario.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
+        <state relative-caret-position="238">
           <caret line="21" column="31" lean-forward="false" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#SenhasUsuario#0;class#SenhasUsuario#0" expanded="false" />
-            <element signature="e#526#527#0" expanded="true" />
-            <element signature="e#565#566#0" expanded="true" />
-            <element signature="e#611#612#0" expanded="true" />
-            <element signature="e#639#640#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/idtech/view/report/report_between.jrxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="6" column="59" lean-forward="false" selection-start-line="6" selection-start-column="59" selection-end-line="6" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_102/src.zip!/java/io/FileInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="91" column="11" lean-forward="false" selection-start-line="91" selection-start-column="11" selection-end-line="91" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/idtech/controller/AppBaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="59" column="12" lean-forward="false" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/idtech/controller/AppChartController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="85" column="79" lean-forward="false" selection-start-line="85" selection-start-column="79" selection-end-line="85" selection-end-column="79" />
+        <state relative-caret-position="17">
+          <caret line="132" column="91" lean-forward="false" selection-start-line="132" selection-start-column="91" selection-end-line="132" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/idtech/controller/AppTableController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="127" column="35" lean-forward="true" selection-start-line="127" selection-start-column="35" selection-end-line="127" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/idtech/controller/AppTableController.java">
+    <entry file="file://$PROJECT_DIR$/src/br/com/idtech/util/ImageUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="87" column="41" lean-forward="true" selection-start-line="87" selection-start-column="41" selection-end-line="87" selection-end-column="41" />
+        <state relative-caret-position="243">
+          <caret line="22" column="25" lean-forward="false" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/idtech/model/reportbuilder/BuildReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="54" column="12" lean-forward="false" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/idtech/model/reportbuilder/Report.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="75" lean-forward="false" selection-start-line="19" selection-start-column="75" selection-end-line="19" selection-end-column="75" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

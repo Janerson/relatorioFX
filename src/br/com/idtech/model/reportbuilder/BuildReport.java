@@ -8,12 +8,10 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JasperFillManager;
 import net.sf.jasperreports.engine.JasperPrint;
 import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
-
 
 import javax.swing.*;
 import java.io.FileInputStream;
@@ -28,7 +26,7 @@ import java.util.Optional;
  * Created by DOM on 06/02/2015.
  * Email - douglas.janerson@gmail.com
  */
-public  class BuildReport {
+public class BuildReport {
 
     private static final Image ICO_IMAGE = ImageUtil.getImage("report.png");
     private InputStream is = null;
@@ -38,11 +36,18 @@ public  class BuildReport {
     private JasperPrint jasperPrint = null;
     private JasperViewer jasperViewer = null;
 
+    public BuildReport() {
+    }
+
     /**
      * Tipo de Relatório
      * @param report
      * @return this
      */
+    public BuildReport withReport(FileInputStream report){
+        this.is = report;
+        return this;
+    }
     public BuildReport withReport(String report){
         try {
             this.is = new FileInputStream(report);
@@ -149,12 +154,7 @@ public  class BuildReport {
      */
     private SwingNode createSwingNode(JasperViewer jasperViewer){
         SwingNode swingNode= new SwingNode();
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                swingNode.setContent((JComponent) jasperViewer.getContentPane());
-            }
-        });
+        SwingUtilities.invokeLater(() -> swingNode.setContent((JComponent) jasperViewer.getContentPane()));
         return swingNode;
     }
 

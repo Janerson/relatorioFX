@@ -54,11 +54,19 @@ public class AppBaseController implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         adjustLayout();
         base = this;
+        try {
+            parent = FXMLUtil.getFXML("app_chart");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        content.getChildren().setAll(parent);
     }
 
     private void adjustLayout(){
         top.fitWidthProperty().bind(nodeRoot.widthProperty());
     }
+
+
 
     @FXML
     private void mouseIn(Event event) {

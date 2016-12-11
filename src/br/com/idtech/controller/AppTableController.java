@@ -2,24 +2,30 @@ package br.com.idtech.controller;
 
 import br.com.idtech.model.entity.SenhaServico;
 import br.com.idtech.model.entity.SenhasUsuario;
+import br.com.idtech.model.reportbuilder.BuildReport;
+import br.com.idtech.model.reportbuilder.Report;
 import br.com.idtech.model.vo.SenhasServicoVO;
 import br.com.idtech.model.vo.SenhasUsuarioVO;
 import br.com.idtech.util.AppUtil;
+import br.com.idtech.util.HibernateUtil;
+import br.com.idtech.util.ImageUtil;
 import br.com.idtech.util.ReadProps;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.DatePicker;
-import javafx.scene.control.Separator;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.*;
 import javafx.scene.text.Text;
 
+import java.io.FileNotFoundException;
 import java.net.URL;
 import java.time.format.DateTimeFormatter;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.ResourceBundle;
 
 /**
@@ -42,7 +48,7 @@ public class AppTableController implements Initializable {
     private DatePicker dtFim;
 
     @FXML
-    private Region region, left,right;
+    private Region region, left, right;
 
 
     @FXML
@@ -88,7 +94,6 @@ public class AppTableController implements Initializable {
         tbUsers.setItems(senhasUsuarios);
 
 
-
     }
 
     private void adjustLayout() {
@@ -105,6 +110,26 @@ public class AppTableController implements Initializable {
             String fim = dtFim.getValue().format(DateTimeFormatter.ISO_DATE);
             senhaServicos.addAll(new SenhasServicoVO(ini, fim).list());
             senhasUsuarios.addAll(new SenhasUsuarioVO(ini, fim).list());
+        }
+    }
+
+    @FXML
+    private void print() throws FileNotFoundException {
+        if (validateField()) {
+            String ini = dtIni.getValue().format(DateTimeFormatter.ISO_DATE);
+            String fim = dtFim.getValue().format(DateTimeFormatter.ISO_DATE);
+
+            Map<String, Object> param = new HashMap<>();
+
+            param.put("data_ini", ini);
+            param.put("data_fim", fim);
+            param.put("top_image", ImageUtil.imageToByte(ImageUtil.getImage("topo.png")));
+
+            new BuildReport().withReport(Report.getReport())
+                    .withParam(param)
+                    .withConnection(HibernateUtil.getConnection())
+                    .buildReport()
+                    .print();
         }
     }
 

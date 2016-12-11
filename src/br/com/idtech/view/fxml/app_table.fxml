@@ -61,7 +61,7 @@
             <Region fx:id="region" />
             <ButtonBar buttonMinWidth="30.0" prefHeight="87.0" prefWidth="72.0">
               <buttons>
-                <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="44.0" prefWidth="48.0" styleClass="btn-print">
+                <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#print" prefHeight="44.0" prefWidth="48.0" styleClass="btn-print">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></Button>
