@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="commons-digester3-3.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/iReport/commons-digester3-3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/iReport/commons-digester3-3.2-with-deps.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,7 +1,6 @@
 package br.com.idtech.model.reportbuilder;
 
 import br.com.idtech.util.ImageUtil;
-import br.com.idtech.view.reportform.JasperViewer;
 import javafx.concurrent.Task;
 import javafx.embed.swing.SwingNode;
 import javafx.scene.Scene;
@@ -9,8 +8,11 @@ import javafx.scene.image.Image;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import net.sf.jasperreports.engine.*;
+import net.sf.jasperreports.engine.JRException;
+import net.sf.jasperreports.engine.JasperFillManager;
+import net.sf.jasperreports.engine.JasperPrint;
 import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
+import net.sf.jasperreports.view.JasperViewer;
 import org.controlsfx.dialog.ProgressDialog;
 
 import javax.swing.*;
@@ -114,9 +116,7 @@ public class BuildReport {
             if(dataSourceOptional.isPresent()){
                 jasperPrint = JasperFillManager.fillReport(is , param , dataSource);
             }else if(connectionOptional.isPresent()){
-
                 jasperPrint = JasperFillManager.fillReport(is , param , connection);
-
             }
         }catch (JRException e){
             e.printStackTrace();

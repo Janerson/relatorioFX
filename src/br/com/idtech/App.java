@@ -1,6 +1,7 @@
 package br.com.idtech;
 
 import br.com.idtech.util.FXMLUtil;
+import br.com.idtech.util.HibernateUtil;
 import br.com.idtech.util.ImageUtil;
 import br.com.idtech.util.StageUtil;
 import javafx.application.Application;
@@ -18,6 +19,7 @@ public class App extends Application {
     public void start(Stage primaryStage) throws Exception {
        Image ICO_IMAGE = ImageUtil.getImage("report.png");
         Parent root = FXMLUtil.getFXML("app_base");
+        HibernateUtil.getConnection();
         Scene scene = new Scene(root);
         scene.getStylesheets().add(getClass()
                 .getResource("view/css/root_chart_style.css")
@@ -25,6 +27,7 @@ public class App extends Application {
         StageUtil.setMinWH(1017,600,primaryStage);
         primaryStage.getIcons().addAll(ICO_IMAGE);
         primaryStage.initStyle(StageStyle.DECORATED);
+        primaryStage.setTitle("ReportFX - Idtech ");
      //   ScenicView.show(scene);
         primaryStage.setScene(scene);
         primaryStage.show();
