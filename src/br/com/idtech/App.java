@@ -27,7 +27,7 @@ public class App extends Application {
         StageUtil.setMinWH(1017,600,primaryStage);
         primaryStage.getIcons().addAll(ICO_IMAGE);
         primaryStage.initStyle(StageStyle.DECORATED);
-        primaryStage.setTitle("ReportFX - Idtech ");
+        primaryStage.setTitle("ReportFX - Idtech v1.0");
      //   ScenicView.show(scene);
         primaryStage.setScene(scene);
         primaryStage.show();
