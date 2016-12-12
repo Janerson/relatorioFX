@@ -1,16 +1,16 @@
 Manifest-Version: 1.0
-Class-Path: org.apache.commons.collections.jar openjfx-dialogs-1.0.2.j
- ar jasperreports-functions-6.3.1.jar castor-xml-1.3.3.jar jasperrepor
- ts-6.3.1.jar jasperreports-chart-themes-6.3.1.jar jasperreports-chart
- -customizers-6.3.1.jar castor-core-1.3.3.jar spring-beans-3.2.16.RELE
- ASE.jar spring-core-3.2.16.RELEASE.jar spring-expression-3.2.16.RELEA
- SE.jar commons-collections4-4.1.jar mysql-connector-java-5.1.23-bin.j
- ar hibernate-core-4.3.1.Final.jar jboss-logging-3.1.3.GA.jar jboss-lo
- gging-annotations-1.2.0.Beta1.jar jboss-transaction-api_1.2_spec-1.0.
- 0.Final.jar dom4j-1.6.1.jar xml-apis-1.0.b2.jar hibernate-commons-ann
- otations-4.0.4.Final.jar hibernate-jpa-2.1-api-1.0.0.Final.jar javass
- ist-3.18.1-GA.jar antlr-2.7.7.jar jandex-1.1.0.Final.jar scenicView.j
- ar spring-core-3.2.2.RELEASE.jar commons-logging-1.1.1.jar controlsfx
- -8.40.12.jar joda-time-2.4.jar commons-digester-2.1.jar commons.jar
+Class-Path: commons.jar mysql-connector-java-5.1.23-bin.jar commons-di
+ gester-2.1.jar scenicView.jar spring-core-3.2.2.RELEASE.jar commons-l
+ ogging-1.1.1.jar hibernate-core-4.3.1.Final.jar jboss-logging-3.1.3.G
+ A.jar jboss-logging-annotations-1.2.0.Beta1.jar jboss-transaction-api
+ _1.2_spec-1.0.0.Final.jar dom4j-1.6.1.jar xml-apis-1.0.b2.jar hiberna
+ te-commons-annotations-4.0.4.Final.jar hibernate-jpa-2.1-api-1.0.0.Fi
+ nal.jar javassist-3.18.1-GA.jar antlr-2.7.7.jar jandex-1.1.0.Final.ja
+ r openjfx-dialogs-1.0.2.jar spring-beans-3.2.16.RELEASE.jar spring-co
+ re-3.2.16.RELEASE.jar spring-expression-3.2.16.RELEASE.jar joda-time-
+ 2.4.jar jasperreports-functions-6.3.1.jar castor-xml-1.3.3.jar jasper
+ reports-6.3.1.jar jasperreports-chart-themes-6.3.1.jar jasperreports-
+ chart-customizers-6.3.1.jar castor-core-1.3.3.jar org.apache.commons.
+ collections.jar controlsfx-8.40.12.jar commons-collections4-4.1.jar
 Main-Class: br.com.idtech.App
 

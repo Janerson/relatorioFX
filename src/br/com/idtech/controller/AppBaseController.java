@@ -1,16 +1,17 @@
 package br.com.idtech.controller;
 
-import br.com.idtech.util.FXMLUtil;
 import br.com.idtech.util.ImageUtil;
 import br.com.idtech.view.animations.ImageEditor;
-import javafx.beans.property.SimpleIntegerProperty;
+import br.com.idtech.view.fxml.GetPath;
 import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.*;
-
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.Region;
+import javafx.scene.layout.StackPane;
+import javafx.scene.layout.VBox;
 
 import java.io.IOException;
 import java.net.URL;
@@ -54,11 +55,7 @@ public class AppBaseController implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         adjustLayout();
         base = this;
-        try {
-            parent = FXMLUtil.getFXML("app_chart");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        parent = GetPath.getFXML("app_chart");
         content.getChildren().setAll(parent);
     }
 
@@ -103,11 +100,11 @@ public class AppBaseController implements Initializable {
     private void onMouseClick(Event event) throws IOException {
         switch (((HBox) event.getSource()).getId()) {
             case "home":
-                parent = FXMLUtil.getFXML("app_chart");
+                parent = GetPath.getFXML("app_chart");
                 content.getChildren().setAll(parent);
                 break;
             case "report":
-                parent = FXMLUtil.getFXML("app_table");
+                parent = GetPath.getFXML("app_table");
                 content.getChildren().setAll(parent);
                 break;
             case "logout":

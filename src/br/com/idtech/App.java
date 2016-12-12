@@ -1,9 +1,9 @@
 package br.com.idtech;
 
-import br.com.idtech.util.FXMLUtil;
 import br.com.idtech.util.HibernateUtil;
 import br.com.idtech.util.ImageUtil;
 import br.com.idtech.util.StageUtil;
+import br.com.idtech.view.fxml.GetPath;
 import javafx.application.Application;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -18,7 +18,7 @@ public class App extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
        Image ICO_IMAGE = ImageUtil.getImage("report.png");
-        Parent root = FXMLUtil.getFXML("app_base");
+        Parent root = GetPath.getFXML("app_base");
         HibernateUtil.getConnection();
         Scene scene = new Scene(root);
         scene.getStylesheets().add(getClass()
