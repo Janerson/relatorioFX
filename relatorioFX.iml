@@ -25,5 +25,7 @@
     <orderEntry type="library" name="openjfx-dialogs-1.0.2" level="project" />
     <orderEntry type="library" name="mysql-connector-java-5.1.23-bin" level="project" />
     <orderEntry type="library" name="scenicView" level="project" />
+    <orderEntry type="library" name="controlsfx-8.40.12 (2)" level="project" />
+    <orderEntry type="library" name="jasperreports-fonts-5.6.0" level="project" />
   </component>
 </module>

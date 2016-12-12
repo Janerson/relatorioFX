@@ -2,6 +2,7 @@ package br.com.idtech.model.reportbuilder;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.InputStream;
 
 /**
  * Created by DOM on 06/02/2015.
@@ -9,17 +10,26 @@ import java.io.FileNotFoundException;
  */
 public class Report {
 
-    private static final String PATH = "br/com/idtech/";
+   private InputStream relJasper ;
 
-    //public static final String DATA_BETWEEN  = new File(PATH+"view/report/report_between.jasper").getPath();
-    public static final String DATA_BETWEEN  = Report.class
-            .getResource("report_between.jasper")
-            .getPath();
-
-    public static FileInputStream getReport() throws FileNotFoundException {
-        return new FileInputStream(Report.class.getResource("report_between.jasper").getFile());
+    public Report(String path) {
+        relJasper = getClass().getResourceAsStream(path);
     }
 
+    public Report() {
+    }
 
+    public InputStream getRelJasper() {
+        return relJasper;
+    }
+    public  InputStream getReportImage(String path) {
+        InputStream is= null;
+        try {
+            is = new FileInputStream(path);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        return is;
+    }
 }
 

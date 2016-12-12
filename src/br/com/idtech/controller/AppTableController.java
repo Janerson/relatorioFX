@@ -8,7 +8,6 @@ import br.com.idtech.model.vo.SenhasServicoVO;
 import br.com.idtech.model.vo.SenhasUsuarioVO;
 import br.com.idtech.util.AppUtil;
 import br.com.idtech.util.HibernateUtil;
-import br.com.idtech.util.ImageUtil;
 import br.com.idtech.util.ReadProps;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -123,9 +122,9 @@ public class AppTableController implements Initializable {
 
             param.put("data_ini", ini);
             param.put("data_fim", fim);
-            param.put("top_image", ImageUtil.imageToByte(ImageUtil.getImage("topo.png")));
+            param.put("top_image", new Report("topo.png").getRelJasper());
 
-            new BuildReport().withReport(Report.getReport())
+            new BuildReport().withReport(new Report("report_between.jasper").getRelJasper())
                     .withParam(param)
                     .withConnection(HibernateUtil.getConnection())
                     .buildReport()

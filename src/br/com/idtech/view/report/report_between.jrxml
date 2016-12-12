@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2016-12-11T15:10:24 -->
+<!-- 2016-12-12T00:00:19 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report_between" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isIgnorePagination="true" uuid="5e56071d-3434-4775-8e30-5685d5a9f041">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="painel2"/>
 	<property name="net.sf.jasperreports.print.create.bookmarks" value="false"/>
@@ -109,7 +109,7 @@ GROUP BY usuarios.nome]]>
 		<band height="79" splitType="Stretch">
 			<image scaleImage="FillFrame" hAlign="Left">
 				<reportElement x="-20" y="-31" width="595" height="109" uuid="f6bf5d85-9e57-4ab2-a51f-236f9d6c0b92"/>
-				<imageExpression><![CDATA["E:/Projects/Intellij Idea/relatorioFX/src/br/com/idtech/view/img/topo.png"]]></imageExpression>
+				<imageExpression><![CDATA[$P{top_image}]]></imageExpression>
 			</image>
 		</band>
 	</title>
@@ -127,7 +127,7 @@ GROUP BY usuarios.nome]]>
 			<staticText>
 				<reportElement x="0" y="20" width="130" height="30" uuid="d1efe29e-26af-4f15-b98a-c3335281a889"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font isBold="true"/>
+					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Total Senhas por Usuário]]></text>
 			</staticText>
@@ -141,21 +141,12 @@ GROUP BY usuarios.nome]]>
 		</band>
 	</columnHeader>
 	<pageFooter>
-		<band height="47">
+		<band height="56">
 			<printWhenExpression><![CDATA[$V{PAGE_NUMBER} > 0]]></printWhenExpression>
-			<textField isBlankWhenNull="true">
-				<reportElement isPrintRepeatedValues="false" x="179" y="17" width="100" height="30" uuid="a60f7f61-edc7-4eb7-abc4-f4758af328e6"/>
-				<textElement textAlignment="Right">
-					<font fontName="DejaVu Sans Mono"/>
-				</textElement>
-				<textFieldExpression><![CDATA["Pág " + $V{PAGE_NUMBER}]]></textFieldExpression>
-			</textField>
-			<textField evaluationTime="Report" isBlankWhenNull="true">
-				<reportElement isPrintRepeatedValues="false" x="281" y="17" width="100" height="30" uuid="c6cd1794-684b-40d5-8efb-fc920d6490e7"/>
-				<textElement textAlignment="Left">
-					<font fontName="DejaVu Sans Mono"/>
-				</textElement>
-				<textFieldExpression><![CDATA[" de " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			<textField>
+				<reportElement x="227" y="13" width="100" height="30" uuid="efc73bc3-c041-4258-b016-0191723fd7c1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
 			</textField>
 		</band>
 	</pageFooter>
@@ -273,12 +264,12 @@ GROUP BY usuarios.nome]]>
 						</jr:tableFooter>
 						<jr:detailCell style="Table 1_TD" height="30">
 							<textField>
-								<reportElement x="0" y="0" width="240" height="30" uuid="760049e0-1e36-4470-8b80-133c091a7965"/>
+								<reportElement positionType="FixRelativeToBottom" x="0" y="0" width="240" height="30" uuid="760049e0-1e36-4470-8b80-133c091a7965"/>
 								<box>
 									<pen lineWidth="1.0"/>
 								</box>
 								<textElement textAlignment="Center" verticalAlignment="Middle">
-									<font fontName="DejaVu Sans" size="12"/>
+									<font fontName="SansSerif" size="12"/>
 								</textElement>
 								<textFieldExpression><![CDATA[$F{nome}]]></textFieldExpression>
 							</textField>
@@ -311,7 +302,7 @@ GROUP BY usuarios.nome]]>
 									<pen lineWidth="1.0"/>
 								</box>
 								<textElement textAlignment="Center" verticalAlignment="Middle">
-									<font fontName="DejaVu Sans" size="11"/>
+									<font fontName="SansSerif" size="11"/>
 								</textElement>
 								<textFieldExpression><![CDATA[$F{total}]]></textFieldExpression>
 							</textField>

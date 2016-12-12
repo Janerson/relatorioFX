@@ -8,12 +8,13 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
-import net.sf.jasperreports.engine.JRException;
-import net.sf.jasperreports.engine.JasperFillManager;
-import net.sf.jasperreports.engine.JasperPrint;
+import javafx.stage.StageStyle;
+import net.sf.jasperreports.engine.*;
 import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
+import org.controlsfx.dialog.ProgressDialog;
 
 import javax.swing.*;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
@@ -29,12 +30,11 @@ import java.util.Optional;
 public class BuildReport {
 
     private static final Image ICO_IMAGE = ImageUtil.getImage("report.png");
-    private InputStream is = null;
-    private Map<String, Object> param = null;
-    private JRBeanCollectionDataSource dataSource = null;
-    private Connection connection = null;
-    private JasperPrint jasperPrint = null;
-    private JasperViewer jasperViewer = null;
+    private InputStream is ;
+    private Map<String, Object> param ;
+    private JRBeanCollectionDataSource dataSource ;
+    private Connection connection ;
+    private JasperPrint jasperPrint ;
 
     public BuildReport() {
     }
@@ -48,7 +48,21 @@ public class BuildReport {
         this.is = report;
         return this;
     }
+    public BuildReport withReport(InputStream report){
+        this.is = report;
+
+        return this;
+    }
     public BuildReport withReport(String report){
+        try {
+            this.is = new FileInputStream(report);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        return this;
+    }
+
+    public BuildReport withReport(File report){
         try {
             this.is = new FileInputStream(report);
         } catch (FileNotFoundException e) {
@@ -100,7 +114,9 @@ public class BuildReport {
             if(dataSourceOptional.isPresent()){
                 jasperPrint = JasperFillManager.fillReport(is , param , dataSource);
             }else if(connectionOptional.isPresent()){
+
                 jasperPrint = JasperFillManager.fillReport(is , param , connection);
+
             }
         }catch (JRException e){
             e.printStackTrace();
@@ -109,12 +125,14 @@ public class BuildReport {
         return this;
     }
 
+
+
     /**
      * Imprime o Relatório na tela para o usuário
      */
     public void print(){
         Stage stage = new Stage();
-        jasperViewer = new JasperViewer(jasperPrint , false);
+        JasperViewer jasperViewer = new JasperViewer(jasperPrint, false);
         BorderPane borderPane = new BorderPane();
         borderPane.setCenter(createSwingNode(jasperViewer));
         Scene scene = new Scene(borderPane , 930 , 700);
@@ -135,11 +153,12 @@ public class BuildReport {
                 return null;
             }
         };
-        /*ProgressDialog dlg = new ProgressDialog(worker);
+        ProgressDialog dlg = new ProgressDialog(worker);
         dlg.setTitle("RELATÓRIO");
         dlg.setHeaderText("POR FAVOR AGUARDE...");
         dlg.initStyle(StageStyle.UTILITY);
-        dlg.show();*/
+        dlg.show();
+
         worker.setOnSucceeded(w-> stage.show());
         Thread th = new Thread(worker);
         th.setDaemon(true);

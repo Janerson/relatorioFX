@@ -100,8 +100,8 @@
                         <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
                      </columnResizePolicy>
                   </TableView>
-                  <Text fx:id="txtServ" layoutX="105.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" AnchorPane.leftAnchor="105.0" AnchorPane.topAnchor="13.05078125" />
-                  <Text fx:id="txtUser" layoutX="409.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" AnchorPane.leftAnchor="409.0" AnchorPane.topAnchor="14.0" />
+                  <Text fx:id="txtServ" layoutX="105.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="13.05078125" />
+                  <Text fx:id="txtUser" layoutX="240.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" AnchorPane.leftAnchor="240.0" AnchorPane.topAnchor="13.0" />
                </children>
             </AnchorPane>
          </center>

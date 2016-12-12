@@ -6,7 +6,6 @@ import br.com.idtech.util.HibernateUtil;
 import org.hibernate.SQLQuery;
 import org.hibernate.transform.Transformers;
 
-import java.util.Date;
 import java.util.List;
 
 /**
@@ -30,7 +29,7 @@ public class SenhasServicoVO {
         String sql = "Select COUNT(senha.senha_id) AS total," +
                 " servicos.descricao AS Servico FROM senha" +
                 " INNER JOIN servicos  ON senha.servico_id = servicos.servico_id" +
-                " WHERE senha.data BETWEEN '" + ini + " 'AND '"+ fim +
+                " WHERE senha.data BETWEEN '" + ini + "' AND '"+ fim +
                 " 'GROUP BY servicos.descricao;";
 
         SQLQuery query = HibernateUtil.getSession().createSQLQuery(sql)

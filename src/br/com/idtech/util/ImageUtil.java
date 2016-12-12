@@ -6,8 +6,7 @@ import javafx.scene.image.Image;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
+import java.io.*;
 
 /**
  * Created by DOM on 21/10/2016.
@@ -24,10 +23,13 @@ public class ImageUtil {
         BufferedImage bImage = SwingFXUtils.fromFXImage(image, null);
         ByteArrayOutputStream s = new ByteArrayOutputStream();
         try {
-            ImageIO.write(bImage, "jpg", s);
+            ImageIO.write(bImage, "png", s);
         } catch (IOException ex) {
             ex.printStackTrace();
         }
         return s.toByteArray();
     }
+
+
+
 }
