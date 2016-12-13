@@ -7,13 +7,11 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JasperFillManager;
 import net.sf.jasperreports.engine.JasperPrint;
 import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 import net.sf.jasperreports.view.JasperViewer;
-import org.controlsfx.dialog.ProgressDialog;
 
 import javax.swing.*;
 import java.io.File;
@@ -119,15 +117,23 @@ public class BuildReport {
         Optional<JRBeanCollectionDataSource> dataSourceOptional = Optional.ofNullable(dataSource);
         Optional<Connection> connectionOptional = Optional.ofNullable(connection);
 
-        try {
-            if (dataSourceOptional.isPresent()) {
-                jasperPrint = JasperFillManager.fillReport(is, param, dataSource);
-            } else if (connectionOptional.isPresent()) {
-                jasperPrint = JasperFillManager.fillReport(is, param, connection);
+        Task t = new Task() {
+            @Override
+            protected Object call() throws Exception {
+                try {
+                    if (dataSourceOptional.isPresent()) {
+                        jasperPrint = JasperFillManager.fillReport(is, param, dataSource);
+                    } else if (connectionOptional.isPresent()) {
+                        jasperPrint = JasperFillManager.fillReport(is, param, connection);
+                    }
+                } catch (JRException e) {
+                    e.printStackTrace();
+                }
+                return null;
             }
-        } catch (JRException e) {
-            e.printStackTrace();
-        }
+        };
+        new Thread(t).start();
+
 
         return this;
     }
@@ -146,13 +152,14 @@ public class BuildReport {
         stage.getIcons().addAll(ICO_IMAGE);
         stage.setTitle("Visualizar Impressão");
         stage.setResizable(false);
+        stage.show();
 
-        Task worker = new Task() {
+      /*  Task worker = new Task() {
             @Override
             protected Object call() throws Exception {
                 updateMessage("Aguarde...");
-                for (int i = 1; i<=100; i++){
-                    updateProgress(i , 100);
+                for (int i = 1; i <= 100; i++) {
+                    updateProgress(i, 100);
                     Thread.sleep(50);
                 }
                 return null;
@@ -165,11 +172,11 @@ public class BuildReport {
         dlg.initStyle(StageStyle.UTILITY);
         dlg.show();
 
-        worker.setOnSucceeded(w-> stage.show());
+        worker.setOnSucceeded(w -> stage.show());
         Thread th = new Thread(worker);
         th.setDaemon(true);
         th.start();
-
+*/
     }
 
     /**

@@ -11,6 +11,7 @@ import br.com.idtech.util.HibernateUtil;
 import br.com.idtech.util.ReadProps;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.concurrent.Task;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.DatePicker;
@@ -19,6 +20,8 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.*;
 import javafx.scene.text.Text;
+import javafx.stage.StageStyle;
+import org.controlsfx.dialog.ProgressDialog;
 
 import java.io.FileNotFoundException;
 import java.net.URL;
@@ -124,15 +127,45 @@ public class AppTableController implements Initializable {
             param.put("data_fim", fim);
             param.put("top_image", new Report("topo.png").getRelJasper());
 
-            new BuildReport()
-                    .withReport(new Report("report_between.jasper").getRelJasper())
-                    .withParam(param)
-                    .withConnection(HibernateUtil.getConnection())
-                    .buildReport()
-                    .print();
+            final BuildReport b = new BuildReport();
+            showReport(b,param);
         }
     }
 
+    private void showReport(final BuildReport b, Map m ){
+        Task worker = new Task() {
+            @Override
+            protected Object call() throws Exception {
+                AppBaseController.base.getRegionOverlayEffect().setVisible(true);
+                b.withReport(new Report("report_between.jasper").getRelJasper())
+                        .withParam(m)
+                        .withConnection(HibernateUtil.getConnection())
+                        .buildReport();
+
+                updateMessage("Aguarde...");
+                for (int i = 1; i <= 100; i++) {
+                    updateProgress(i, 100);
+                    Thread.sleep(50);
+                }
+                return null;
+            }
+        };
+
+        ProgressDialog dlg = new ProgressDialog(worker);
+        dlg.setTitle("RELATÓRIO");
+        dlg.setHeaderText("POR FAVOR AGUARDE...");
+        dlg.initStyle(StageStyle.UTILITY);
+        dlg.show();
+
+        worker.setOnSucceeded(w -> {
+            b.print();
+            AppBaseController.base.getRegionOverlayEffect().setVisible(false);
+        });
+
+        Thread th = new Thread(worker);
+        th.setDaemon(true);
+        th.start();
+    }
 
 
     private boolean validateField() {
