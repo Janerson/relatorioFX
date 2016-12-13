@@ -33,5 +33,6 @@
     <orderEntry type="library" name="org.apache.commons.collections" level="project" />
     <orderEntry type="library" name="joda-time-2.4" level="project" />
     <orderEntry type="library" name="commons-digester-2.1" level="project" />
+    <orderEntry type="library" name="poi-3.10.1" level="project" />
   </component>
 </module>

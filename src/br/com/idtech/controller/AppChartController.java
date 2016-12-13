@@ -7,17 +7,17 @@ import br.com.idtech.model.vo.SenhasUsuarioVO;
 import br.com.idtech.util.AppUtil;
 import br.com.idtech.util.GraficoUtil;
 import br.com.idtech.util.ReadProps;
+import com.sun.javafx.tk.Toolkit;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.concurrent.Task;
 import javafx.embed.swing.SwingFXUtils;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.geometry.Side;
 import javafx.scene.Node;
 import javafx.scene.SnapshotParameters;
-import javafx.scene.chart.BarChart;
-import javafx.scene.chart.LineChart;
-import javafx.scene.chart.PieChart;
+import javafx.scene.chart.*;
 import javafx.scene.control.ButtonBar;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
@@ -36,6 +36,7 @@ import java.util.ResourceBundle;
 
 import static br.com.idtech.util.GraficoUtil.getDataServico;
 import static br.com.idtech.util.GraficoUtil.getDataUser;
+import static br.com.idtech.util.GraficoUtil.getXYSeriesServ;
 
 /**
  * Created by Lab on 06/12/2016.
@@ -62,6 +63,7 @@ public class AppChartController implements Initializable {
     private ButtonBar btnbar;
 
     private PieChart pieChart;
+    private static BarChart barChart;
 
 
     private ObservableList<SenhaServico> senhaServicos = FXCollections.observableArrayList();
@@ -73,8 +75,9 @@ public class AppChartController implements Initializable {
         adjustLayout();
         initiControl();
     }
-    void initiControl(){
-        cbFiltro.getItems().setAll("Serviços" , "Usuários");
+
+    void initiControl() {
+        cbFiltro.getItems().setAll("Serviços", "Usuários");
         cbFiltro.valueProperty().addListener((observable, oldValue, newValue) -> getDataBetween(newValue.toString()));
 
     }
@@ -88,27 +91,33 @@ public class AppChartController implements Initializable {
     }
 
 
-
-
     private PieChart createPieChart(String title) {
         PieChart p = new PieChart();
         p.setAnimated(true);
         p.setClockwise(false);
         p.setTitle(title);
+        p.setLegendVisible(false);
         p.setLegendSide(Side.RIGHT);
         return p;
     }
 
-    private void setChart(Node chart , ObservableList l){
-        if(l!=null){
-            if(chart instanceof PieChart ){
-                chartContent.getChildren().setAll(chart);
-            }else if( chart instanceof BarChart){
+    private BarChart createBarChart(String title){
+        BarChart b= new BarChart(new CategoryAxis() , new NumberAxis());
+        b.setTitle(title);
+        b.setAnimated(true);
+        return b;
+    }
 
-            }else if(chart instanceof LineChart){
+    private void setChart(Node chart, ObservableList l) {
+        if (l != null) {
+            if (chart instanceof PieChart) {
+                chartContent.getChildren().setAll(chart);
+            } else if (chart instanceof BarChart) {
+                    chartContent.getChildren().setAll(barChart);
+            } else if (chart instanceof LineChart) {
 
             }
-        }else{
+        } else {
             chartContent.getChildren().setAll(new Text("Não há dados a serem exibidos"));
         }
     }
@@ -122,11 +131,14 @@ public class AppChartController implements Initializable {
             switch (filtro) {
                 case "Serviços":
                     senhaServicos.setAll(new SenhasServicoVO(ini, fim).list());
-                    pieChart = createPieChart(ReadProps.lerProperties("pie_chart_senhas_servico"));
-                    setChart(pieChart,senhaServicos);
-                    pieChart.setData(getDataServico(senhaServicos));
-                    GraficoUtil.pierChartCSS(pieChart);
-                    GraficoUtil.pierChartCSSLegendItem(pieChart);
+                    //pieChart = createPieChart(ReadProps.lerProperties("pie_chart_senhas_servico"));
+                    barChart = createBarChart(ReadProps.lerProperties("pie_chart_senhas_servico"));
+                    //setChart(pieChart,senhaServicos);
+                    setChart(barChart,senhaServicos);
+                    //pieChart.setData(getDataServico(senhaServicos));
+                    barChart.setData(getXYSeriesServ(senhaServicos));
+                    //GraficoUtil.pierChartCSS(pieChart);
+                    //GraficoUtil.pierChartCSSLegendItem(pieChart);
                     break;
                 case "Usuários":
                     senhasUsuarios.setAll(new SenhasUsuarioVO(ini, fim).list());

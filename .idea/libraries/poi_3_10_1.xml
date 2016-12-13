@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="poi-3.10.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/iReport/poi/poi-3.10.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/iReport/poi/poi-ooxml-3.10.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/iReport/poi/poi-ooxml-schemas-3.10.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/iReport/poi/org.apache.commons.codec_1.6.0.v201305230611.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
