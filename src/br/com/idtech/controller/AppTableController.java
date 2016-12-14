@@ -7,6 +7,7 @@ import br.com.idtech.model.reportbuilder.Report;
 import br.com.idtech.model.vo.SenhasServicoVO;
 import br.com.idtech.model.vo.SenhasUsuarioVO;
 import br.com.idtech.util.AppUtil;
+import br.com.idtech.util.ExportExcel;
 import br.com.idtech.util.HibernateUtil;
 import br.com.idtech.util.ReadProps;
 import javafx.collections.FXCollections;
@@ -20,9 +21,11 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.*;
 import javafx.scene.text.Text;
+import javafx.stage.FileChooser;
 import javafx.stage.StageStyle;
 import org.controlsfx.dialog.ProgressDialog;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.net.URL;
 import java.time.format.DateTimeFormatter;
@@ -132,6 +135,44 @@ public class AppTableController implements Initializable {
         }
     }
 
+    @FXML
+    private void toExcel(){
+        if (validateField()) {
+            FileChooser fileChooser = new FileChooser();
+            FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter("EXCEL file (*.xls)", "*.xls");
+            fileChooser.getExtensionFilters().add(extFilter);
+            File file = fileChooser.showSaveDialog(bordePane.getScene().getWindow());
+            AppBaseController.base.getRegionOverlayEffect().setVisible(true);
+            Task worker = new Task() {
+                @Override
+                protected Object call() throws Exception {
+                    new ExportExcel()
+                            .withFileOutput(file)
+                            .withSheet("Serviços", "Usuários")
+                            .withDataServ(senhaServicos, 0)
+                            .withDataUser(senhasUsuarios, 1)
+                            .export();
+
+                    updateMessage("Aguarde...");
+                    for (int i = 1; i <= 100; i++) {
+                        updateProgress(i, 100);
+                        Thread.sleep(50);
+                    }
+                    return null;
+                }
+            };
+            ProgressDialog dlg = new ProgressDialog(worker);
+            dlg.setTitle("RELATÓRIO");
+            dlg.setHeaderText("POR FAVOR AGUARDE...");
+            dlg.initStyle(StageStyle.UTILITY);
+            dlg.show();
+
+            worker.setOnSucceeded(w -> AppBaseController.base.getRegionOverlayEffect().setVisible(false));
+            Thread th = new Thread(worker);
+            th.setDaemon(true);
+            th.start();
+        }
+    }
     private void showReport(final BuildReport b, Map m ){
         Task worker = new Task() {
             @Override

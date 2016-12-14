@@ -57,8 +57,18 @@
                </padding>
             </GridPane>
             <Region fx:id="region" />
-            <ButtonBar fx:id="btnbar" buttonMinWidth="30.0" prefHeight="87.0" prefWidth="72.0">
+            <ButtonBar fx:id="btnbar" buttonMinWidth="30.0" prefHeight="87.0" prefWidth="203.0">
               <buttons>
+                  <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" styleClass="btn-pie-chart" text="Button">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" styleClass="btn-bar-chart" text="Button">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
                 <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#saveAsImage" styleClass="btn-snapshot">
                      <cursor>
                         <Cursor fx:constant="HAND" />

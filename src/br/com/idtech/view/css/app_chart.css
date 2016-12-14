@@ -1,13 +1,41 @@
-.btn-snapshot{
-    -fx-graphic: url("../img/snapshot-.png");
-}
-.btn-snapshot:hover{
-    -fx-graphic: url("../img/snapshot-hover.png");
-}
-
 .btn-print{
-    -fx-graphic: url("../img/print.png");
+    -fx-background-color: transparent;
+    -fx-graphic: url("../img/imp.png");
 }
 .btn-print:hover{
-    -fx-graphic: url("../img/print-hover.png");
+    -fx-graphic: url("../img/imp-hover.png");
+}
+
+.btn-excel{
+    -fx-background-color: transparent;
+    -fx-graphic: url("../img/excel.png");
+}
+.btn-excel:hover{
+    -fx-graphic: url("../img/excel-hover.png");
+}
+
+.btn-snapshot{
+    -fx-background-color: transparent;
+    -fx-graphic: url("../img/camera.png");
+}
+.btn-snapshot:hover{
+    -fx-graphic: url("../img/camera-hover.png");
+}
+
+.btn-bar-chart{
+    -fx-background-color: transparent;
+    -fx-graphic: url("../img/Bar-Chart.png");
+}
+
+.btn-bar-chart:hover{
+    -fx-graphic: url("../img/Bar-Chart-hover.png");
+}
+
+.btn-pie-chart{
+    -fx-background-color: transparent;
+    -fx-graphic: url("../img/Pie-Chart.png");
+}
+
+.btn-pie-chart:hover{
+    -fx-graphic: url("../img/Pie-Chart-hover.png");
 }

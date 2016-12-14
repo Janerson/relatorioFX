@@ -7,10 +7,8 @@ import br.com.idtech.model.vo.SenhasUsuarioVO;
 import br.com.idtech.util.AppUtil;
 import br.com.idtech.util.GraficoUtil;
 import br.com.idtech.util.ReadProps;
-import com.sun.javafx.tk.Toolkit;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.concurrent.Task;
 import javafx.embed.swing.SwingFXUtils;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -36,7 +34,6 @@ import java.util.ResourceBundle;
 
 import static br.com.idtech.util.GraficoUtil.getDataServico;
 import static br.com.idtech.util.GraficoUtil.getDataUser;
-import static br.com.idtech.util.GraficoUtil.getXYSeriesServ;
 
 /**
  * Created by Lab on 06/12/2016.
@@ -62,8 +59,8 @@ public class AppChartController implements Initializable {
     @FXML
     private ButtonBar btnbar;
 
-    private PieChart pieChart;
-    private static BarChart barChart;
+    private PieChart pieChart = new PieChart();
+    private  BarChart barChart;
 
 
     private ObservableList<SenhaServico> senhaServicos = FXCollections.observableArrayList();
@@ -113,7 +110,7 @@ public class AppChartController implements Initializable {
             if (chart instanceof PieChart) {
                 chartContent.getChildren().setAll(chart);
             } else if (chart instanceof BarChart) {
-                    chartContent.getChildren().setAll(barChart);
+                    chartContent.getChildren().setAll(chart);
             } else if (chart instanceof LineChart) {
 
             }
@@ -122,32 +119,48 @@ public class AppChartController implements Initializable {
         }
     }
 
+    //TODO- validar dados
+    public  void setBarChart(BarChart barChart , String s) {
+        if(validateField()){
+            switch (s){
+                case "Serviços":
+                    barChart = createBarChart(ReadProps.lerProperties("pie_chart_senhas_servico"));
+                    setChart(barChart,senhaServicos);
+                    GraficoUtil.barChartCSS(barChart);
+                case "Usuários":
+            }
 
-    private void getDataBetween(String filtro) {
-        if (validateField()) {
+        }
+    }
+
+    public void setPieChart(PieChart pieChart , String filtro ){
 
             String ini = dtIni.getValue().format(DateTimeFormatter.ISO_DATE);
             String fim = dtFim.getValue().format(DateTimeFormatter.ISO_DATE);
             switch (filtro) {
                 case "Serviços":
                     senhaServicos.setAll(new SenhasServicoVO(ini, fim).list());
-                    //pieChart = createPieChart(ReadProps.lerProperties("pie_chart_senhas_servico"));
-                    barChart = createBarChart(ReadProps.lerProperties("pie_chart_senhas_servico"));
-                    //setChart(pieChart,senhaServicos);
-                    setChart(barChart,senhaServicos);
-                    //pieChart.setData(getDataServico(senhaServicos));
-                    barChart.setData(getXYSeriesServ(senhaServicos));
-                    //GraficoUtil.pierChartCSS(pieChart);
-                    //GraficoUtil.pierChartCSSLegendItem(pieChart);
+                    pieChart.setTitle(ReadProps.lerProperties("pie_chart_senhas_servico"));
+                    setChart(pieChart,senhaServicos);
+                    pieChart.setData(getDataServico(senhaServicos));
+                    GraficoUtil.pierChartCSS(pieChart);
+                    GraficoUtil.pierChartCSSLegendItem(pieChart);
                     break;
                 case "Usuários":
                     senhasUsuarios.setAll(new SenhasUsuarioVO(ini, fim).list());
                     pieChart.setTitle(ReadProps.lerProperties("pie_chart_senhas_usuario"));
+                    setChart(pieChart,senhaServicos);
                     pieChart.setData(getDataUser(senhasUsuarios));
                     GraficoUtil.pierChartCSS(pieChart);
                     GraficoUtil.pierChartCSSLegendItem(pieChart);
                     break;
-            }
+
+        }
+    }
+
+    private void getDataBetween(String filtro) {
+        if (validateField()) {
+            setPieChart(pieChart , filtro);
         }
     }
 
