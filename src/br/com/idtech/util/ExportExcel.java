@@ -43,10 +43,8 @@ public class ExportExcel {
             wb.createSheet(s);
             wb.getSheet(s).setDefaultColumnStyle(0, style());
             wb.getSheet(s).setDefaultColumnStyle(1, style());
-            wb.getSheet(s).setDefaultColumnWidth(500);
-            wb.getSheet(s).setDefaultRowHeight((short)100);
-            /*wb.getSheet(s).setColumnWidth(0, 169);
-            wb.getSheet(s).setColumnWidth(1, 137);*/
+            wb.getSheet(s).setColumnWidth(0, 10*700);
+            wb.getSheet(s).setColumnWidth(1, 8*700);
         }
         return this;
     }
@@ -80,7 +78,6 @@ public class ExportExcel {
 
     public ExportExcel withDataUser(List<SenhasUsuario> s, int sheetIndex) {
         HSSFRow row = wb.getSheetAt(sheetIndex).createRow(0);
-        row.setHeightInPoints(45);
         row.createCell(0).setCellValue("Usuário");
         row.createCell(1).setCellValue("Qtd. Atendimentos");
         row.getCell(0).setCellStyle(header());
@@ -89,6 +86,7 @@ public class ExportExcel {
         int rowIndex = 1;
         for (SenhasUsuario u : s) {
             HSSFRow r = wb.getSheetAt(sheetIndex).createRow(rowIndex);
+
             HSSFCell col0 = r.createCell(0);
             col0.setCellValue(u.getUsuario());
 
@@ -115,12 +113,12 @@ public class ExportExcel {
         estilo.setRightBorderColor(HSSFColor.BLACK.index);
         estilo.setTopBorderColor(HSSFColor.BLACK.index);
 
-        estilo.setBorderBottom(HSSFCellStyle.BORDER_THIN);
-        estilo.setBorderLeft(HSSFCellStyle.BORDER_THIN);
-        estilo.setBorderRight(HSSFCellStyle.BORDER_THIN);
-        estilo.setBorderTop(HSSFCellStyle.BORDER_THIN);
+        estilo.setBorderBottom(CellStyle.BORDER_THIN);
+        estilo.setBorderLeft(CellStyle.BORDER_THIN);
+        estilo.setBorderRight(CellStyle.BORDER_THIN);
+        estilo.setBorderTop(CellStyle.BORDER_THIN);
 
-        estilo.setWrapText(true);
+      //  estilo.setWrapText(true);
         return estilo;
     }
 
@@ -142,7 +140,6 @@ public class ExportExcel {
         try {
             wb.write(saida);
             saida.close();
-
         } catch (IOException e) {
             e.printStackTrace();
         }

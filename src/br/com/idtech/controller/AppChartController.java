@@ -151,8 +151,8 @@ public class AppChartController implements Initializable {
                     pieChart.setTitle(ReadProps.lerProperties("pie_chart_senhas_usuario"));
                     setChart(pieChart,senhaServicos);
                     pieChart.setData(getDataUser(senhasUsuarios));
-                    GraficoUtil.pierChartCSS(pieChart);
-                    GraficoUtil.pierChartCSSLegendItem(pieChart);
+                  /*  GraficoUtil.pierChartCSS(pieChart);
+                    GraficoUtil.pierChartCSSLegendItem(pieChart);*/
                     break;
 
         }
